@@ -1,0 +1,6 @@
+*.cmd
+*.txt
+.git*
+*.xcf
+*.png
+store/*.png
