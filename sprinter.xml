@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle type="PalletAutoLoaderCar" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/vehicle.xsd">
+    <annotation>Farming-Freunde</annotation>
+
+    <storeData>
+        <name>MB Sprinter autoload</name>
+        <specs>
+            <power>109</power>
+            <maxSpeed>100</maxSpeed>
+        </specs>
+        <functions>
+            <function>$l10n_function_sprinter</function>
+        </functions>
+        <image>store_Sprinter.dds</image>
+        <price>40000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>MERCEDES</brand>
+        <category>cars</category>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_car</typeDesc>
+        <filename>sprinter.i3d</filename>
+        <size width="2.2" length="6"/>
+		
+        <components>
+            <component centerOfMass="0 0 0.437" solverIterationCount="10" mass="3500"/>
+        </components>
+		
+        <schemaOverlay attacherJointPosition="0 0" name="CAR" />
+        <mapHotspot type="CAR" />
+        <!-- <sounds filename="Sounds/case_ih_1455.xml"/> -->
+		<sounds filename="$data/vehicles/lizard/pickup2017/sounds/pickup2017.xml"/>
+    </base>
+	
+	<aPalletAutoLoader>
+		<aPalletAutoLoaderConfigurations>
+			<aPalletAutoLoaderConfiguration maxObjects="12" useBales="false" useTensionBelts="true" supportedObject="data/objects/pallets">
+				<trigger node="triggerNode"/>
+				<pickupTriggers>
+					<pickupTrigger node="pickupTriggerNode"/>
+					<pickupTrigger node="pickupTriggerNode2"/>
+				</pickupTriggers>
+                <loadArea baseNode="loadingBase" leftRightCornerOffset="0.65 -0.1 0" lenght="3.36" width="1.30" height="1.8"/>
+			</aPalletAutoLoaderConfiguration>
+		</aPalletAutoLoaderConfigurations>
+	</aPalletAutoLoader>
+
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0">
+                <wheels autoRotateBackSpeed="2.0">
+                    <wheel filename="Wheels/mb.xml" configId="mb" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="0.5" repr="wheelFrontLeft" driveNode="wheelFrontLeftNode" forcePointRatio="0.5" initialCompression="25" suspTravel="0.19" spring="40" damper="50" frictionScale="3"/>
+                    </wheel>
+                    <wheel filename="Wheels/mb.xml" configId="mb" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="0.5" repr="wheelFrontRight" driveNode="wheelFrontRightNode" forcePointRatio="0.5" initialCompression="25" suspTravel="0.19" spring="40" damper="50" frictionScale="3"/>
+                    </wheel>
+                    <wheel filename="Wheels/mb.xml" configId="mb" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="0.7" repr="wheelBackLeft" forcePointRatio="0.5" radius="0.41" width="0.30" initialCompression="25" suspTravel="0.14" spring="19" damper="50" frictionScale="3"/>
+                    </wheel>
+                    <wheel filename="Wheels/mb.xml" configId="mb" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="0.7" repr="wheelBackRight" forcePointRatio="0.5" radius="0.41" width="0.30" initialCompression="25" suspTravel="0.14" spring="19" damper="50" frictionScale="3"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+        </wheelConfigurations>
+		
+        <ackermannSteeringConfigurations>
+            <ackermannSteering rotSpeed="45" rotMax="45" rotCenterWheel1="3" rotCenterWheel2="4"/>
+        </ackermannSteeringConfigurations>
+    </wheels>
+
+    <attacherJoints>
+        <attacherJoint allowsJointLimitMovement="false" canTurnOnImplement="false" comboTime="1" jointType="trailerLow" lowerRotLimit="10 70 50" node="trailerAttacherJoint" upperRotationOffset="0">
+            <attachSound linkNode="0>" template="ATTACH_01"/>
+            <schema invertX="false" position="1 0" rotation="0"/>
+        </attacherJoint>
+    </attacherJoints>
+
+    <connectionHoses>
+        <target attacherJointIndices="1" node="electric" socket="electric_metal" type="electric"/>
+    </connectionHoses>
+
+	<licensePlates defaultPlacement="BOTH">
+        <licensePlate node="licensePlateFront" position="FRONT" preferedType="ELONGATED" placementArea="0.10 0.22 0.10 0.22"/>
+        <licensePlate node="licensePlateBack"  position="BACK"  preferedType="ELONGATED" placementArea="0.10 0.22 0.10 0.22"/>
+    </licensePlates>
+	
+    <lights>
+        <states>
+            <state lightTypes="1" />
+			<state lightTypes="2" />
+        </states>
+		
+		<sharedLight linkNode="abblendLicht_links" lightTypes="1 2" filename="Lights/frontLightCircleWhite_02.xml"/>
+        <sharedLight linkNode="abblendLicht_rechts" lightTypes="1 2" filename="Lights/frontLightCircleWhite_02.xml"/>
+        <sharedLight linkNode="fernLicht_links" lightTypes="2" filename="Lights/frontLightCircleWhite_02.xml"/>
+        <sharedLight linkNode="fernLicht_rechts" lightTypes="2" filename="Lights/frontLightCircleWhite_02.xml"/>
+        <sharedLight linkNode="blinkerFront_links" filename="$data/shared/assets/lights/lizard/rearLight22Orange_left.xml"/>
+        <sharedLight linkNode="blinkerFront_rechts" filename="$data/shared/assets/lights/lizard/rearLight22Orange_right.xml"/>
+        <sharedLight linkNode="blinkerSide_links" filename="$data/shared/assets/lights/lizard/sideMarker08Orange_left.xml"/>
+        <sharedLight linkNode="blinkerSide_rechts" filename="$data/shared/assets/lights/lizard/sideMarker08Orange_right.xml"/>
+        <sharedLight linkNode="backLightLeft" lightTypes="1 2" filename="Lights/rearLightCircleRed_02.xml"/>
+        <sharedLight linkNode="backLightRight" lightTypes="1 2" filename="Lights/rearLightCircleRed_02.xml"/>
+        <sharedLight linkNode="brakeLightLeft" filename="Lights/rearLightCircleRed_02_x.xml"/>
+        <sharedLight linkNode="brakeLightRight" filename="Lights/rearLightCircleRed_02_x.xml"/>
+        <sharedLight linkNode="blinkerBack_links" filename="$data/shared/assets/lights/lizard/rearLight22Orange_left.xml"/>
+        <sharedLight linkNode="blinkerBack_rechts" filename="$data/shared/assets/lights/lizard/rearLight22Orange_right.xml"/>
+        <sharedLight linkNode="reverseLight1" filename="$data/shared/assets/lights/lizard/rearLight22White.xml"/>
+        <sharedLight linkNode="reverseLight2" filename="$data/shared/assets/lights/lizard/rearLight22White.xml"/>
+        <sharedLight linkNode="sideMarker10Orange1" lightTypes="1 2" filename="$data/shared/assets/lights/lizard/sideMarker11Orange.xml"/>
+        <sharedLight linkNode="sideMarker10Orange2" lightTypes="1 2" filename="$data/shared/assets/lights/lizard/sideMarker11Orange.xml"/>
+        <sharedLight linkNode="sideMarker10Orange3" lightTypes="1 2" filename="$data/shared/assets/lights/lizard/sideMarker11Orange.xml"/>
+        <sharedLight linkNode="sideMarker10Orange4" lightTypes="1 2" filename="$data/shared/assets/lights/lizard/sideMarker11Orange.xml"/>
+        <sharedLight linkNode="sideMarker10Orange5" lightTypes="1 2" filename="$data/shared/assets/lights/lizard/sideMarker11Orange.xml"/>
+        <sharedLight linkNode="sideMarker10Orange6" lightTypes="1 2" filename="$data/shared/assets/lights/lizard/sideMarker11Orange.xml"/>
+		
+        <realLights>
+            <low>
+                <light node="frontLightLow" lightTypes="1 2" excludedLightTypes="3"/>
+                <light node="highBeamLow" lightTypes="2"/>
+            </low>
+            <high>
+                <light node="frontLightHigh" lightTypes="1 2" excludedLightTypes="3"/>
+                <light node="highBeamHigh" lightTypes="2"/>
+				<light node="licensePlateLightHigh" lightTypes="1 2"/>
+                <light node="backLightsHigh" lightTypes="1"/>
+                <turnLightLeft node="turnLightLeftFront"/>
+                <turnLightLeft node="turnLightLeftBack"/>
+                <turnLightRight node="turnLightRightFront"/>
+                <turnLightRight node="turnLightRightBack"/>
+                <brakeLight node="brakeLightsHigh"/>
+                <reverseLight node="reverseLights"/>
+            </high>
+        </realLights>
+		
+        <beaconLights>
+            <beaconLight node="rulRight" filename="Lights/beaconLight09.xml"/>
+            <beaconLight node="rulLeft" filename="Lights/beaconLight09.xml"/>
+            <beaconLight node="rulBack" filename="Lights/beaconLight09.xml"/>
+            <beaconLight node="rulBar1" filename="Lights/rulBar01_1.xml"/>
+            <beaconLight node="rulBar2" filename="Lights/rulBar01_2.xml"/>
+            <beaconLight node="rulBar3" filename="Lights/rulBar01_3.xml"/>
+            <beaconLight node="rulBar4" filename="Lights/rulBar01_4.xml"/>
+            <beaconLight node="rulBar5" filename="Lights/rulBar02_1.xml"/>
+            <beaconLight node="rulBar6" filename="Lights/rulBar02_2.xml"/>
+        </beaconLights>
+		
+        <sounds>
+            <toggleLights linkNode="0>" template="SWITCH_01"/>
+            <turnLight linkNode="0>" template="SWITCH_TURNLIGHT"/>
+        </sounds>
+		
+        <dashboards>
+            <dashboard valueType="lightState" displayType="EMITTER" groups="MOTOR_ACTIVE" node="speedDecal" intensity="0.5" lightTypes="1 2">
+                <default>
+                    <dashboard displayType="VISIBILITY" groups="MOTOR_ACTIVE" node="naviDecal"/>
+                </default>
+            </dashboard>
+            <dashboard valueType="lightState" displayType="EMITTER" groups="MOTOR_ACTIVE" node="rpmDecal" intensity="0.5" lightTypes="1 2"/>
+            <dashboard valueType="lightState" displayType="EMITTER" groups="MOTOR_ACTIVE" node="naviDecal" intensity="0.5" lightTypes="1 2"/>
+            <dashboard valueType="lightState" displayType="EMITTER" groups="MOTOR_ACTIVE" node="fuelDecal" intensity="0.5" lightTypes="1 2"/>
+            <dashboard valueType="lightState" displayType="EMITTER" groups="MOTOR_ACTIVE" node="mDisplayDecal" intensity="0.5" lightTypes="1 2"/>
+            <dashboard valueType="turnLightHazard" displayType="EMITTER" groups="MOTOR_ACTIVE" node="warningLightHazardDecal" baseColor="BLACK" emitColor="RED" intensity="4"/>
+            <dashboard valueType="turnLightLeft" displayType="EMITTER" groups="MOTOR_ACTIVE" node="turnlightLeftDecal" baseColor="BLACK" emitColor="GREEN" intensity="1"/>
+            <dashboard valueType="turnLightRight" displayType="EMITTER" groups="MOTOR_ACTIVE" node="turnlightRightDecal" baseColor="BLACK" emitColor="GREEN" intensity="1"/>
+        </dashboards>
+    </lights>
+
+    <enterable isTabbable="true">
+        <exitPoint node="exitPoint"/>
+        <enterReferenceNode node="exitPoint"/>
+		
+        <characterNode node="playerSkin" cameraMinDistance="1.5" spineRotation="-90 0 90">
+            <target ikChain="rightFoot" targetNode="rightFoot"/>
+            <target ikChain="leftFoot" targetNode="leftFoot"/>
+            <target ikChain="rightArm" targetNode="rightArm"/>
+            <target ikChain="leftArm" targetNode="leftArm"/>
+        </characterNode>
+		
+        <cameras>
+            <camera node="outdoorCamera" rotatable="true" rotateNode="outdoorCameraTarget" limit="true" useWorldXZRotation="true" rotMinX="-1.4" rotMaxX="1" transMin="6" transMax="40" translation="0 0 9.5" rotation="-20 180 0">
+                <raycastNode node="cameraRaycastNode1"/>
+                <raycastNode node="cameraRaycastNode2"/>
+                <raycastNode node="cameraRaycastNode3"/>
+            </camera>
+            <camera node="indoorCamera" rotatable="true" limit="true" rotMinX="-1.1" rotMaxX="0.4" transMin="0" transMax="0" useMirror="true" isInside="true"/>
+        </cameras>
+		
+        <mirrors>
+            <mirror node="mirrorBigLeft" prio="1"/>
+            <mirror node="mirrorBigRight" prio="1"/>
+            <mirror node="mirrorSmallLeft" prio="2"/>
+            <mirror node="mirrorSmallRight" prio="2"/>
+        </mirrors>
+		
+        <dashboards>
+            <dashboard valueType="time" displayType="NUMBER" groups="MOTOR_ACTIVE" numbers="numbersTime" numberColor="TRELLEBORG_WHITE3" precision="2"/>
+            <dashboard valueType="operatingTime" displayType="NUMBER" groups="MOTOR_ACTIVE" numbers="numbersOperatingTime" numberColor="TRELLEBORG_WHITE3" precision="1"/>
+        </dashboards>
+    </enterable>
+
+    <suspensions>
+        <suspension node="seat" weight="150" minTranslation="-0.05 -0.15 0.0" maxTranslation="0.05 0.15 0.0" suspensionParametersX="20 4" suspensionParametersY="5 1" suspensionParametersZ="20 4"/>
+        <suspension useCharacterTorso="true" weight="90" minRotation="0 -5 -5" maxRotation="0 5 5" suspensionParametersY="7 1" suspensionParametersZ="7 1"/>
+    </suspensions>
+
+	<fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit capacity="120" fillTypes="diesel" showOnHud="false" showInShop="false" unitTextOverride="$l10n_unit_literShort">
+                        <dashboard valueType="fillLevel" displayType="ANIMATION" groups="MOTOR_ACTIVE" animName="fuelDisplay"/>
+                    </fillUnit>
+                    <fillUnit capacity="28" fillTypes="def" showOnHud="false" showInShop="false" unitTextOverride="$l10n_unit_literShort"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+	
+    <motorized statsType="car" >
+        <consumerConfigurations>
+            <consumerConfiguration>
+                <consumer fillUnitIndex="1" usage="55" fillType="diesel"/>
+                <consumer fillUnitIndex="2" usage="45" fillType="def"/>
+            </consumerConfiguration>
+        </consumerConfigurations>
+		
+		<motorConfigurations>
+            <motorConfiguration name="311 CDI" hp="109" price="0">
+                <motor torqueScale="0.462" minRpm="1000" maxRpm="6000" maxForwardSpeed="100" maxBackwardSpeed="45" brakeForce="2" lowBrakeForceScale="0.22" dampingRateScale="0.4">
+                    <torque rpm="1000" torque="0.9"/>
+                    <torque rpm="2400" torque="1"/>
+                    <torque rpm="3480" torque="1"/>
+                    <torque rpm="4560" torque="0.75"/>
+                    <torque rpm="5280" torque="0.63"/>
+                    <torque rpm="6000" torque="0.2"/>
+                </motor>
+                <transmission autoGearChangeTime="1" gearChangeTime="0.4" name="$l10n_info_transmission_manual" axleRatio="25" startGearThreshold="0.3">
+                    <directionChange useGear="true"/>
+                    <backwardGear gearRatio="4.066" name="R"/>
+                    <forwardGear gearRatio="4.784"/>
+                    <forwardGear gearRatio="2.423"/>
+                    <forwardGear gearRatio="1.443"/>
+                    <forwardGear gearRatio="1.000"/>
+                    <forwardGear gearRatio="0.826"/>
+                    <forwardGear gearRatio="0.643"/>
+                </transmission>
+				<objectChange node="CDI" visibilityActive="true"/>
+                <objectChange node="311" visibilityActive="true"/>
+                <objectChange node="313" visibilityActive="false"/>
+                <objectChange node="316" visibilityActive="false"/>
+                <objectChange node="318" visibilityActive="false"/>
+				<objectChange node="ePower" visibilityActive="false"/>
+            </motorConfiguration>
+			
+			<motorConfiguration name="313 CDI" hp="129" price="0">
+                <motor torqueScale="0.503" minRpm="1000" maxRpm="6000" maxForwardSpeed="100" maxBackwardSpeed="45" brakeForce="2" lowBrakeForceScale="0.22" dampingRateScale="0.4">
+                    <torque rpm="1000" torque="0.9"/>
+                    <torque rpm="2400" torque="1"/>
+                    <torque rpm="3480" torque="1"/>
+                    <torque rpm="4560" torque="0.75"/>
+                    <torque rpm="5280" torque="0.63"/>
+                    <torque rpm="6000" torque="0.2"/>
+                </motor>
+                <transmission autoGearChangeTime="1" gearChangeTime="0.4" name="$l10n_info_transmission_manual" axleRatio="25" startGearThreshold="0.3">
+                    <directionChange useGear="true"/>
+                    <backwardGear gearRatio="4.066" name="R"/>
+                    <forwardGear gearRatio="4.784"/>
+                    <forwardGear gearRatio="2.423"/>
+                    <forwardGear gearRatio="1.443"/>
+                    <forwardGear gearRatio="1.000"/>
+                    <forwardGear gearRatio="0.826"/>
+                    <forwardGear gearRatio="0.643"/>
+                </transmission>
+				<objectChange node="CDI" visibilityActive="true"/>
+                <objectChange node="311" visibilityActive="false"/>
+                <objectChange node="313" visibilityActive="true"/>
+                <objectChange node="316" visibilityActive="false"/>
+                <objectChange node="318" visibilityActive="false"/>
+				<objectChange node="ePower" visibilityActive="false"/>
+            </motorConfiguration>
+			
+			<motorConfiguration name="316 CDI" hp="163" price="0">
+                <motor torqueScale="0.636" minRpm="1000" maxRpm="6000" maxForwardSpeed="100" maxBackwardSpeed="45" brakeForce="2" lowBrakeForceScale="0.22" dampingRateScale="0.4">
+                    <torque rpm="1000" torque="0.9"/>
+                    <torque rpm="2400" torque="1"/>
+                    <torque rpm="3480" torque="1"/>
+                    <torque rpm="4560" torque="0.75"/>
+                    <torque rpm="5280" torque="0.63"/>
+                    <torque rpm="6000" torque="0.2"/>
+                </motor>
+                <transmission autoGearChangeTime="1" gearChangeTime="0.4" name="$l10n_info_transmission_manual" axleRatio="25" startGearThreshold="0.3">
+                    <directionChange useGear="true"/>
+                    <backwardGear gearRatio="4.066" name="R"/>
+                    <forwardGear gearRatio="4.784"/>
+                    <forwardGear gearRatio="2.423"/>
+                    <forwardGear gearRatio="1.443"/>
+                    <forwardGear gearRatio="1.000"/>
+                    <forwardGear gearRatio="0.826"/>
+                    <forwardGear gearRatio="0.643"/>
+                </transmission>
+				<objectChange node="CDI" visibilityActive="true"/>
+                <objectChange node="311" visibilityActive="false"/>
+                <objectChange node="313" visibilityActive="false"/>
+                <objectChange node="316" visibilityActive="true"/>
+                <objectChange node="318" visibilityActive="false"/>
+				<objectChange node="ePower" visibilityActive="false"/>
+            </motorConfiguration>
+			
+			<motorConfiguration name="318 CDI" hp="184" price="0">
+                <motor torqueScale="0.718" minRpm="1000" maxRpm="6000" maxForwardSpeed="100" maxBackwardSpeed="45" brakeForce="2" lowBrakeForceScale="0.22" dampingRateScale="0.4">
+                    <torque rpm="1000" torque="0.9"/>
+                    <torque rpm="2400" torque="1"/>
+                    <torque rpm="3480" torque="1"/>
+                    <torque rpm="4560" torque="0.75"/>
+                    <torque rpm="5280" torque="0.63"/>
+                    <torque rpm="6000" torque="0.2"/>
+                </motor>
+                <transmission autoGearChangeTime="1" gearChangeTime="0.4" name="$l10n_info_transmission_manual" axleRatio="25" startGearThreshold="0.3">
+                    <directionChange useGear="true"/>
+                    <backwardGear gearRatio="4.066" name="R"/>
+                    <forwardGear gearRatio="4.784"/>
+                    <forwardGear gearRatio="2.423"/>
+                    <forwardGear gearRatio="1.443"/>
+                    <forwardGear gearRatio="1.000"/>
+                    <forwardGear gearRatio="0.826"/>
+                    <forwardGear gearRatio="0.643"/>
+                </transmission>
+				<objectChange node="CDI" visibilityActive="true"/>
+                <objectChange node="311" visibilityActive="false"/>
+                <objectChange node="313" visibilityActive="false"/>
+                <objectChange node="316" visibilityActive="false"/>
+                <objectChange node="318" visibilityActive="true"/>
+				<objectChange node="ePower" visibilityActive="false"/>
+            </motorConfiguration>
+        </motorConfigurations>
+		
+        <differentialConfigurations>
+            <differentialConfiguration>
+                <differentials>
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.8" wheelIndex1="1" wheelIndex2="2"/>
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.8" wheelIndex1="3" wheelIndex2="4"/>
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.8" differentialIndex1="1" differentialIndex2="2"/>
+                </differentials>
+            </differentialConfiguration>
+        </differentialConfigurations>
+		
+        <exhaustEffects>
+            <exhaustEffect node="exhaustParticle" filename="$data/effects/exhaust/exhaust.i3d" minRpmColor="0.0 0.0 0.0 0.01" maxRpmColor="0 0 0 7" minRpmScale="0.1" maxRpmScale="0.55"/>
+        </exhaustEffects>
+		
+        <motorStartDuration>1600</motorStartDuration>
+		
+        <dashboards>
+            <dashboard valueType="rpm" displayType="ANIMATION" groups="MOTOR_ACTIVE" animName="rpmDisplay" minValueAnim="0" maxValueAnim="4000"/>
+            <dashboard valueType="speed" displayType="ANIMATION" groups="MOTOR_ACTIVE" animName="speedDisplay" minValueAnim="0" maxValueAnim="160"/>
+        </dashboards>
+    </motorized>
+
+    <drivable>
+        <dashboards>
+            <dashboard displayType="ROT" doInterpolation="true" groups="MOTOR_ACTIVE" maxRot="-6 0 0" minRot="0 0 0" node="brakePedal" valueType="decelerationAxis"/>
+            <dashboard displayType="ROT" doInterpolation="true" groups="MOTOR_ACTIVE" maxRot="-6 0 0" minRot="0 0 0" node="gasPedal" valueType="accelerationAxis"/>
+        </dashboards>
+		
+        <sounds>
+            <waterSplash linkNode="0>" template="WATER_SPLASH_01"/>
+        </sounds>
+		
+        <steeringWheel indoorRotation="360" node="steeringWheel" outdoorRotation="37"/>
+    </drivable>
+
+    <animations>
+        <animation name="wiperFrontAnimation">
+            <part endRot="0 -47 -67" endTime="0.5" node="wiper01" startRot="0 0 0" startTime="0.0"/>
+            <part endRot="0 -33 -64" endTime="0.5" node="wiper02" startRot="0 0 0" startTime="0.0"/>
+        </animation>
+        <animation name="sideDoor">
+            <part endRot="0 0 0" endTime="0.75" endTrans="-0.98 1.51 -0.35" node="sideDoor" startTime="0.0" startTrans="-0.808 1.51 -0.35"/>
+            <part endRot="0 0 0" endTime="2.0" endTrans="-0.98 1.51 -1.747" node="sideDoor" startTime="0.75" startTrans="-0.98 1.51 -0.35"/>
+			
+			<!-- Left -->
+			<part endRot="0 -90 0" endTime="1.5" node="backDoorLeftNode" startRot="0 0 0" startTime="0.0"/>
+			<part endRot="0 -90 0" endTime="2.5" node="backDoorLeft" startRot="0 0 0" startTime="1.5"/>
+			
+			<!-- Right -->
+            <part endRot="0 90 0" endTime="1.5" node="backDoorRightNode" startRot="0 0 0" startTime="0.0"/>
+			<part endRot="0 90 0" endTime="2.5" node="backDoorRight" startRot="0 0 0" startTime="1.5"/>
+        </animation>
+		
+        <animation name="speedDisplay">
+            <part endRot="0 0 150" endTime="1" node="speedNeedle" startRot="0 0 0" startTime="0"/>
+        </animation>
+		
+        <animation name="rpmDisplay">
+            <part endRot="0 0 91" endTime="1" node="rpmNeedle" startRot="0 0 0" startTime="0"/>
+        </animation>
+		
+        <animation name="fuelDisplay">
+            <part endRot="0 0 115" endTime="1" node="fuelNeedle" startRot="0 0 0" startTime="0"/>
+        </animation>
+    </animations>
+
+    <wipers>
+        <wiper animName="wiperFrontAnimation">
+            <state animSpeed="0.75" animPause="2.0"/>
+            <state animSpeed="0.75" animPause="0.0"/>
+            <state animSpeed="1.10" animPause="0.0"/>
+        </wiper>
+    </wipers>
+
+    <foldable>
+        <foldingConfigurations>
+            <foldingConfiguration>
+                <foldingParts posDirectionText="$l10n_doorClose" negDirectionText="$l10n_doorOpen">
+                    <foldingPart animationName="sideDoor" speedScale="1"/>
+                </foldingParts>
+            </foldingConfiguration>
+        </foldingConfigurations>
+    </foldable>
+
+    <cylindered>
+        <movingTools>
+            <movingTool node="sideDoor" playSound="true"/>
+        </movingTools>
+        <sounds>
+            <hydraulic linkNode="mb_sprinter_main_component1" template="PICKUP_TRUNK"/>
+        </sounds>
+    </cylindered>
+
+    <tensionBelts>
+        <tensionBeltsConfigurations>
+            <tensionBeltsConfiguration>
+                <tensionBelts linkNode="tensionBelts" jointNode="mb_sprinter_main_component1" activationTrigger="beltActivationTrigger" width="0.075" maxEdgeLength="0.1" geometryBias="0.01" ratchetPosition="0.2" defaultOffset="-0.25" defaultOffsetSide="0.1" defaultHeight="2.75" interactionRadius="1.5" totalInteractionRadius="6.5">
+                    <tensionBelt startNode="beltStart1" endNode="beltEnd1"/>
+                    <tensionBelt startNode="beltStart2" endNode="beltEnd2"/>
+                    <tensionBelt startNode="beltStart3" endNode="beltEnd3"/>
+                    <tensionBelt startNode="beltStart4" endNode="beltEnd4"/>
+                    <tensionBelt startNode="beltStart5" endNode="beltEnd5"/>
+                </tensionBelts>
+            </tensionBeltsConfiguration>
+        </tensionBeltsConfigurations>
+    </tensionBelts>
+
+	<designConfigurations>
+        <designConfiguration name="$l10n_rul_1" price="0">
+            <objectChange node="rulLeft" visibilityActive="false"/>
+            <objectChange node="rulRight" visibilityActive="false"/>
+            <objectChange node="rulBack" visibilityActive="false"/>
+            <objectChange node="rulBar1" visibilityActive="false"/>
+            <objectChange node="rulBar2" visibilityActive="false"/>
+            <objectChange node="rulBar3" visibilityActive="false"/>
+            <objectChange node="rulBar4" visibilityActive="false"/>
+            <objectChange node="rulBar5" visibilityActive="false"/>
+            <objectChange node="rulBar6" visibilityActive="false"/>
+        </designConfiguration>
+        <designConfiguration name="$l10n_rul_2" price="100">
+            <objectChange node="rulRight" visibilityActive="true"/>
+            <objectChange node="rulLeft" visibilityActive="false"/>
+            <objectChange node="rulBack" visibilityActive="false"/>
+            <objectChange node="rulBar1" visibilityActive="false"/>
+            <objectChange node="rulBar2" visibilityActive="false"/>
+            <objectChange node="rulBar3" visibilityActive="false"/>
+            <objectChange node="rulBar4" visibilityActive="false"/>
+            <objectChange node="rulBar5" visibilityActive="false"/>
+            <objectChange node="rulBar6" visibilityActive="false"/>
+        </designConfiguration>
+        <designConfiguration name="$l10n_rul_3" price="200">
+            <objectChange node="rulRight" visibilityActive="true"/>
+            <objectChange node="rulLeft" visibilityActive="true"/>
+            <objectChange node="rulBack" visibilityActive="false"/>
+            <objectChange node="rulBar1" visibilityActive="false"/>
+            <objectChange node="rulBar2" visibilityActive="false"/>
+            <objectChange node="rulBar3" visibilityActive="false"/>
+            <objectChange node="rulBar4" visibilityActive="false"/>
+            <objectChange node="rulBar5" visibilityActive="false"/>
+            <objectChange node="rulBar6" visibilityActive="false"/>
+        </designConfiguration>
+        <designConfiguration name="$l10n_rul_4" price="300">
+            <objectChange node="rulRight" visibilityActive="true"/>
+            <objectChange node="rulLeft" visibilityActive="true"/>
+            <objectChange node="rulBack" visibilityActive="true"/>
+            <objectChange node="rulBar1" visibilityActive="false"/>
+            <objectChange node="rulBar2" visibilityActive="false"/>
+            <objectChange node="rulBar3" visibilityActive="false"/>
+            <objectChange node="rulBar4" visibilityActive="false"/>
+            <objectChange node="rulBar5" visibilityActive="false"/>
+            <objectChange node="rulBar6" visibilityActive="false"/>
+        </designConfiguration>
+        <designConfiguration name="$l10n_rul_5" price="1000">
+            <objectChange node="rulLeft" visibilityActive="false"/>
+            <objectChange node="rulRight" visibilityActive="false"/>
+            <objectChange node="rulBack" visibilityActive="false"/>
+            <objectChange node="rulBar1" visibilityActive="false"/>
+            <objectChange node="rulBar2" visibilityActive="false"/>
+            <objectChange node="rulBar3" visibilityActive="false"/>
+            <objectChange node="rulBar4" visibilityActive="false"/>
+            <objectChange node="rulBar5" visibilityActive="true"/>
+            <objectChange node="rulBar6" visibilityActive="true"/>
+        </designConfiguration>
+        <designConfiguration name="$l10n_rul_6" price="2000">
+            <objectChange node="rulLeft" visibilityActive="false"/>
+            <objectChange node="rulRight" visibilityActive="false"/>
+            <objectChange node="rulBack" visibilityActive="false"/>
+            <objectChange node="rulBar1" visibilityActive="true"/>
+            <objectChange node="rulBar2" visibilityActive="true"/>
+            <objectChange node="rulBar3" visibilityActive="true"/>
+            <objectChange node="rulBar4" visibilityActive="true"/>
+            <objectChange node="rulBar5" visibilityActive="false"/>
+            <objectChange node="rulBar6" visibilityActive="false"/>
+        </designConfiguration>
+    </designConfigurations>
+
+	<baseMaterial>
+        <material name="sprinter_mat" baseNode="body_vis">
+            <shaderParameter name="colorMat0" value="CASEIH_RED1" />
+        </material>
+    </baseMaterial>
+
+    <baseMaterialConfigurations defaultColorIndex="13" price="250" useDefaultColors="true" title="$l10n_configuration_chassisColor">
+		<baseMaterialConfiguration name="SPECIAL RED"	color="CASEIH_RED1"	material="27" price="1000"/>
+		<baseMaterialConfiguration name="SPECIAL BLUE"	color="NEWHOLLAND_BLUE1" material="27" price="1000"/>
+		<baseMaterialConfiguration name="SPECIAL GREEN"	color="JOSKIN_GREEN1"	material="27" price="1000"/>
+		<baseMaterialConfiguration name="SPECIAL YELLOW" color="GREATPLAINS_YELLOW"	material="27" price="1000"/>
+        <material name="sprinter_mat" shaderParameter="colorMat0" />
+    </baseMaterialConfigurations>
+
+	<rimColorConfigurations>
+		<rimColorConfiguration name="Grey" color="SHARED_GREY2" material="0" price="0" isDefault="true"/>
+        <rimColorConfiguration name="$l10n_ui_colorChrome" color="SHARED_WHITE2" material="3" price="0"/>
+    </rimColorConfigurations>
+	
+    <wearable wearDuration="360" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="60" washDuration="1" workMultiplier="3" fieldMultiplier="2"/>
+	
+    <honk>
+        <sound linkNode="mb_sprinter_main_component1" template="HONK_TRUCK"/>
+    </honk>
+
+	<ai>
+        <agent width="2.05" length="5.5" height="1.85" lengthOffset="1.35" frontOffset="3.09" />
+        <collisionTrigger node="aiCollisionNode" width="2.4" height="1.8"/>
+    </ai>
+	
+	<foliageBending>
+        <bendingNode minX="-1" maxX="1" minZ="-2.75" maxZ="2.65" yOffset="0.4" />
+    </foliageBending>
+	
+	<dashboard>
+        <groups>
+            <group name="MOTOR_STARTING" isMotorStarting="true"/>
+            <group name="MOTOR_ACTIVE" isMotorStarting="true" isMotorRunning="true"/>
+        </groups>
+        <default>
+            <dashboard displayType="VISIBILITY" node="naviDecal" groups="MOTOR_ACTIVE"/>
+        </default>
+    </dashboard>
+	
+    <i3dMappings>
+        <i3dMapping id="mb_sprinter_main_component1" node="0>"/>
+        <i3dMapping id="body_vis" node="0>4"/>
+        <i3dMapping id="exhaustParticle" node="0>12"/>
+        <i3dMapping id="wheelFrontLeftNode" node="0>0|0"/>
+        <i3dMapping id="wheelFrontRightNode" node="0>1|0"/>
+        <i3dMapping id="wheelFrontLeft" node="0>0"/>
+        <i3dMapping id="wheelFrontRight" node="0>1"/>
+        <i3dMapping id="wheelBackLeft" node="0>2"/>
+        <i3dMapping id="wheelBackRight" node="0>3"/>
+        <i3dMapping id="exitPoint" node="0>11"/>
+        <i3dMapping id="outdoorCamera" node="0>5|0|0"/>
+        <i3dMapping id="outdoorCameraTarget" node="0>5|0"/>
+        <i3dMapping id="indoorCamera" node="0>5|1"/>
+        <i3dMapping id="cameraRaycastNode1" node="0>5|2"/>
+        <i3dMapping id="cameraRaycastNode2" node="0>5|3"/>
+        <i3dMapping id="cameraRaycastNode3" node="0>5|4"/>
+        <i3dMapping id="playerSkin" node="0>8|0|0"/>
+        <i3dMapping id="rightFoot" node="0>7|0"/>
+        <i3dMapping id="leftFoot" node="0>7|1"/>
+        <i3dMapping id="rightArm" node="0>6|0|0"/>
+        <i3dMapping id="leftArm" node="0>6|0|1"/>
+        <i3dMapping id="steeringWheel" node="0>6|0"/>
+        <i3dMapping id="brakePedal" node="0>9|5"/>
+        <i3dMapping id="gasPedal" node="0>9|6"/>
+        <i3dMapping id="wiper01" node="0>9|7"/>
+        <i3dMapping id="wiper02" node="0>9|8"/>
+        <i3dMapping id="seat" node="0>8|0"/>
+        <i3dMapping id="aiCollisionNode" node="0>14|0"/>
+        <i3dMapping id="sideDoor" node="0>9|2"/>
+        <i3dMapping id="backDoorLeftNode" node="0>9|3"/>
+        <i3dMapping id="backDoorRightNode" node="0>9|4"/>
+		<i3dMapping id="backDoorLeft" node="0>9|3|0"/>
+        <i3dMapping id="backDoorRight" node="0>9|4|0"/>
+        <i3dMapping id="sideMarker10Orange1" node="0>13|0|0"/>
+        <i3dMapping id="sideMarker10Orange2" node="0>13|0|1"/>
+        <i3dMapping id="sideMarker10Orange3" node="0>13|0|2"/>
+        <i3dMapping id="sideMarker10Orange4" node="0>13|0|3"/>
+        <i3dMapping id="sideMarker10Orange5" node="0>13|0|4"/>
+        <i3dMapping id="sideMarker10Orange6" node="0>13|0|5"/>
+        <i3dMapping id="abblendLicht_links" node="0>13|0|6"/>
+        <i3dMapping id="abblendLicht_rechts" node="0>13|0|7"/>
+        <i3dMapping id="fernLicht_links" node="0>13|0|8"/>
+        <i3dMapping id="fernLicht_rechts" node="0>13|0|9"/>
+        <i3dMapping id="blinkerFront_links" node="0>13|0|10"/>
+        <i3dMapping id="blinkerFront_rechts" node="0>13|0|11"/>
+        <i3dMapping id="frontLightLow" node="0>13|0|12"/>
+        <i3dMapping id="highBeamLow" node="0>13|0|13"/>
+        <i3dMapping id="frontLightHigh" node="0>13|0|14"/>
+        <i3dMapping id="highBeamHigh" node="0>13|0|15"/>
+        <i3dMapping id="turnLightLeftFront" node="0>13|0|16"/>
+        <i3dMapping id="turnLightRightFront" node="0>13|0|17"/>
+        <i3dMapping id="brakeLightLeft" node="0>13|1|0"/>
+        <i3dMapping id="brakeLightRight" node="0>13|1|1"/>
+        <i3dMapping id="backLightLeft" node="0>13|1|4"/>
+        <i3dMapping id="backLightRight" node="0>13|1|5"/>
+        <i3dMapping id="blinkerBack_links" node="0>13|1|2"/>
+        <i3dMapping id="blinkerBack_rechts" node="0>13|1|3"/>
+        <i3dMapping id="blinkerSide_links" node="0>13|0|18"/>
+        <i3dMapping id="blinkerSide_rechts" node="0>13|0|19"/>
+        <i3dMapping id="reverseLight1" node="0>13|1|6"/>
+        <i3dMapping id="reverseLight2" node="0>13|1|7"/>
+        <i3dMapping id="backLightsHigh" node="0>13|1|8"/>
+        <i3dMapping id="brakeLightsHigh" node="0>13|1|11"/>
+        <i3dMapping id="turnLightLeftBack" node="0>13|1|9"/>
+        <i3dMapping id="turnLightRightBack" node="0>13|1|10"/>
+        <i3dMapping id="reverseLights" node="0>13|1|12"/>
+        <i3dMapping id="trailerAttacherJoint" node="0>16|0|0"/>
+        <i3dMapping id="electric" node="0>16|0|1"/>
+        <i3dMapping id="mirrorBigLeft" node="0>9|0|1|0"/>
+        <i3dMapping id="mirrorBigRight" node="0>9|1|1|0"/>
+        <i3dMapping id="mirrorSmallLeft" node="0>9|0|1|1"/>
+        <i3dMapping id="mirrorSmallRight" node="0>9|1|1|1"/>
+        <i3dMapping id="CDI" node="0>9|4|0|0|0"/>
+        <i3dMapping id="311" node="0>9|4|0|0|1"/>
+        <i3dMapping id="313" node="0>9|4|0|0|2"/>
+        <i3dMapping id="316" node="0>9|4|0|0|3"/>
+        <i3dMapping id="318" node="0>9|4|0|0|4"/>
+		<i3dMapping id="ePower" node="0>9|4|0|0|5"/>
+        <i3dMapping id="tensionBelts" node="0>15|0"/>
+        <i3dMapping id="beltActivationTrigger" node="0>15|0|5"/>
+        <i3dMapping id="beltStart1" node="0>15|0|0"/>
+        <i3dMapping id="beltEnd1" node="0>15|0|0|0"/>
+        <i3dMapping id="beltStart2" node="0>15|0|1"/>
+        <i3dMapping id="beltEnd2" node="0>15|0|1|0"/>
+        <i3dMapping id="beltStart3" node="0>15|0|2"/>
+        <i3dMapping id="beltEnd3" node="0>15|0|2|0"/>
+        <i3dMapping id="beltStart4" node="0>15|0|3"/>
+        <i3dMapping id="beltEnd4" node="0>15|0|3|0"/>
+        <i3dMapping id="beltStart5" node="0>15|0|4"/>
+        <i3dMapping id="beltEnd5" node="0>15|0|4|0"/>
+        <i3dMapping id="rulLeft" node="0>15|1|0|0"/>
+        <i3dMapping id="rulRight" node="0>15|1|0|1"/>
+        <i3dMapping id="rulBack" node="0>15|1|0|2"/>
+        <i3dMapping id="rulBar1" node="0>15|1|0|3"/>
+        <i3dMapping id="rulBar2" node="0>15|1|0|3"/>
+        <i3dMapping id="rulBar3" node="0>15|1|0|3"/>
+        <i3dMapping id="rulBar4" node="0>15|1|0|3"/>
+        <i3dMapping id="rulBar5" node="0>15|1|0|4"/>
+        <i3dMapping id="rulBar6" node="0>15|1|0|4"/>
+        <i3dMapping id="speedNeedle" node="0>8|1|0"/>
+        <i3dMapping id="rpmNeedle" node="0>8|1|1"/>
+        <i3dMapping id="fuelNeedle" node="0>8|1|2"/>
+        <i3dMapping id="naviDecal" node="0>8|2|2"/>
+        <i3dMapping id="speedDecal" node="0>8|2|0"/>
+        <i3dMapping id="rpmDecal" node="0>8|2|1"/>
+        <i3dMapping id="fuelDecal" node="0>8|2|3"/>
+        <i3dMapping id="mDisplayDecal" node="0>8|2|4"/>
+        <i3dMapping id="numbersTime" node="0>8|2|5"/>
+        <i3dMapping id="numbersOperatingTime" node="0>8|2|6"/>
+        <i3dMapping id="warningLightHazardDecal" node="0>8|2|7|2"/>
+        <i3dMapping id="turnlightLeftDecal" node="0>8|2|7|0"/>
+        <i3dMapping id="turnlightRightDecal" node="0>8|2|7|1"/>
+		<i3dMapping id="licensePlateFront" node="0>15|3|0"/>
+		<i3dMapping id="licensePlateBack" node="0>9|3|0|0"/>
+		<i3dMapping id="licensePlateLightHigh" node="0>9|3|0|2"/>
+        	
+        <i3dMapping id="pickupTriggerNode" node="0>20|0" />
+        <i3dMapping id="pickupTriggerNode2" node="0>20|1" />
+        <i3dMapping id="triggerNode" node="0>20|2" />
+        <i3dMapping id="loadingBase" node="0>20|3" />
+    </i3dMappings>
+
+</vehicle>

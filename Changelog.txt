@@ -1,0 +1,5 @@
+v1.0.0.1
+- Vehicle Type geändert
+- ePower Decal verbaut
+- rechter Außenspiegel eingestellt
+- Kraftstoffverbrauch geändert

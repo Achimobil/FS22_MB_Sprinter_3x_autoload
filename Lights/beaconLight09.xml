@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<beaconLight xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/beaconLight.xsd">
+    <filename>Lights/beaconLight09.i3d</filename>
+    <rootNode  node="0" />
+    <rotator   node="0|0" speed="0" />
+    <light     shaderNode="0|0" intensity="10000" multiBlink="true"/>
+    <realLight node="0|0|0" />
+    <device    mode="DOUBLE_BLINK_TRIPLE_WAIT" rpm="100" numLEDScale="1" brightnessScale="1" />
+</beaconLight>
