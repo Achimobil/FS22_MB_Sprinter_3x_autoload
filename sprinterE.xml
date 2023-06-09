@@ -30,13 +30,22 @@
 	</base>
 	<aPalletAutoLoader>
 		<aPalletAutoLoaderConfigurations>
-			<aPalletAutoLoaderConfiguration maxObjects="12" useBales="false" useTensionBelts="true" supportedObject="data/objects/pallets">
+			<aPalletAutoLoaderConfiguration maxObjects="400" useBales="false" useTensionBelts="true" supportedObject="data/objects/pallets" UnloadRightOffset="3 -0.5 0" UnloadLeftOffset="-3 -0.5 0">
 				<trigger node="triggerNode"/>
 				<pickupTriggers>
 					<pickupTrigger node="pickupTriggerNode"/>
 					<pickupTrigger node="pickupTriggerNode2"/>
 				</pickupTriggers>
-				<loadArea baseNode="loadingBase" leftRightCornerOffset="0.65 -0.1 0" lenght="3.36" width="1.30" height="1.8"/>
+				<loadArea baseNode="loadingBase" leftRightCornerOffset="0.65 -0.06 -0.05" lenght="3.36" width="1.33" height="2.10"/>
+				<autoLoadObjectSettings>
+					<!-- <autoLoadObjectSetting name="hb_cheese" leftRightCornerOffset="0.65 -0.06 -0.05" lenght="3.36" width="2.1"/> -->
+					<autoLoadObjectSetting name="hb_cheese" height="1.8"/>
+					<autoLoadObjectSetting name="hb_goatcheese" height="1.8"/>
+					<autoLoadObjectSetting name="hb_eggWoodBox" height="1.8" maxObjects="100"/>
+					<autoLoadObjectSetting name="hb_fertilizerBag" height="1.8" maxObjects="60"/>
+					<autoLoadObjectSetting name="hb_strawberriesBox" height="1.9" maxObjects="56"/>
+					<autoLoadObjectSetting name="hb_maltSack" height="1.8" maxObjects="60"/>
+				</autoLoadObjectSettings>
 			</aPalletAutoLoaderConfiguration>
 		</aPalletAutoLoaderConfigurations>
 	</aPalletAutoLoader>
