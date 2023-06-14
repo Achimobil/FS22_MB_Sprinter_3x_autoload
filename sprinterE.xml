@@ -41,6 +41,7 @@
 					<!-- <autoLoadObjectSetting name="hb_cheese" leftRightCornerOffset="0.65 -0.06 -0.05" lenght="3.36" width="2.1"/> -->
 					<autoLoadObjectSetting name="hb_cheese" height="1.8"/>
 					<autoLoadObjectSetting name="hb_goatcheese" height="1.8"/>
+					<autoLoadObjectSetting name="hb_catFoodPallet" height="1.8"/>
 					<autoLoadObjectSetting name="hb_eggWoodBox" height="1.8" maxObjects="100"/>
 					<autoLoadObjectSetting name="hb_fertilizerBag" height="1.8" maxObjects="60"/>
 					<autoLoadObjectSetting name="hb_strawberriesBox" height="1.9" maxObjects="56"/>
