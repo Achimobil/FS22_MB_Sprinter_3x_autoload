@@ -83,6 +83,10 @@ Auf die Ladefläche passen maximal die folgenden Ladegüter (Autoload Version 1.
         </text>
     </l10n>
 	
+	<extraSourceFiles>
+		<sourceFile filename="scripts/AddPalletAutoload.lua" />
+	</extraSourceFiles>
+	
     <storeItems>
         <storeItem xmlFilename="sprinter.xml"/>
 		<storeItem xmlFilename="sprinterE.xml"/>
@@ -90,7 +94,6 @@ Auf die Ladefläche passen maximal die folgenden Ladegüter (Autoload Version 1.
 	
 	<vehicleTypes>
 		<type name="PalletAutoLoaderCar" parent="car" filename="$dataS/scripts/vehicles/Vehicle.lua">
-			<specialization name="FS22_aPalletAutoLoader.aPalletAutoLoader"/>
 		</type>
 	</vehicleTypes>	
 	
