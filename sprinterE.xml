@@ -295,7 +295,7 @@
 	<foldable>
 		<foldingConfigurations>
 			<foldingConfiguration>
-				<foldingParts posDirectionText="$l10n_doorClose" negDirectionText="$l10n_doorOpen">
+				<foldingParts posDirectionText="$l10n_doorClose" negDirectionText="$l10n_doorOpen" requiresPower="false">
 					<foldingPart animationName="sideDoor" speedScale="1"/>
 				</foldingParts>
 			</foldingConfiguration>
