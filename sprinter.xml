@@ -2,7 +2,7 @@
 <vehicle type="PalletAutoLoaderCar" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/vehicle.xsd">
 	<annotation>Farming-Freunde</annotation>
 	<storeData>
-		<name>MB Sprinter autoload</name>
+		<name>MB Sprinter AL edition</name>
 		<specs>
 			<power>109</power>
 			<maxSpeed>100</maxSpeed>

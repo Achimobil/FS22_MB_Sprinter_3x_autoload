@@ -1,104 +1,108 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<modDesc descVersion="64">
-    <author>Achimobil</author>
-    <contributor>Farming-Freunde</contributor>
-    <version>1.1.0.0</version>
-    <title>
-        <en>MB Sprinter 3x Palletautoload</en>
-        <de>MB Sprinter 3x Palettenautoload</de>
-    </title>
+<modDesc descVersion="75">
+	<author>Achimobil</author>
+	<contributor>Farming-Freunde</contributor>
+	<version>1.2.0.0</version>
+	<title>
+		<en>MB Sprinter 3x AL Edition</en>
+		<de>MB Sprinter 3x AL Edition</de>
+	</title>
+	<description>
+		<en>
+<![CDATA[This is the Mercedes Benz Sprinter 3x from FSM team from LS19.
+Extended by Achimobil with the autoloader with permission of Chefkoch.
+Autoload is automatically available when the base mod is available.
+Without it, it is just a fancy Sprinter as diesel and electric version.
+Loadable amount varies depending on the load.
 
-    <description>
-        <en>
-<![CDATA[This is the Mercedes Benz Sprinter 3x by FSM-Team from FS19.
-Extended by Achimobil with the Autoloader with permission from Chefkoch.
-Original without Autoloader here: https://forbidden-mods.de/filebase/file/28265-ls22-mb-sprinter-3x/
+Diesel power: 80-135 kW / 109-184 hp with manual transmission
+Electric power: 85-149 kW / 202-184 hp with continuously variable transmission
+Diesel tank: 120 l
+Price 40.000 €
+Color choice for cabin and rims
 
-The loading area can hold a maximum of the following loads (Autoload version 1.6.1)
-- 2 Bigbag pallets
-- 2 Oversized euro pallets
-- 3 Bigbags
-- 4 Euro pallets
-]]>
-        </en>
-        <de>
+Changelog 1.2.0.0
+- Light corrected
+- Sound improved
+- Trigger corrected
+- Loading height adjustments for Hof Bergmann pallets]]></en>
+		<de>
 <![CDATA[Das ist der Mercedes Benz Sprinter 3x vom FSM-Team aus LS19.
 Erweitert von Achimobil um den Autoloader mit Genehmigung von Chefkoch.
-Original ohne Autoloader hier: https://forbidden-mods.de/filebase/file/28265-ls22-mb-sprinter-3x/
+Autoload ist automatisch verfügbar, wenn der Basismod verfügbar ist.
+Ohne diesen ist er nur ein schicker Sprinter als Diesel und Elektro Version
+Ladbare Menge variiert je nach Ladegut.
 
-Auf die Ladefläche passen maximal die folgenden Ladegüter (Autoload Version 1.6.1)
-- 2 Bigbag Paletten
-- 2 Übergroße Europaletten
-- 3 Bigbags
-- 4 Europaletten
-]]>
-        </de>
-    </description>
+Leistung Diesel: 80-135 kW / 109-184 PS mit manueller Schaltung
+Leistung Elektro: 85-149 kW / 202-184 PS mit stufenloser Schaltung
+Dieseltank: 120 l
+Preis 40.000 €
+Farbwahl für Kabine und Felgen
 
-    <iconFilename>icon.dds</iconFilename>
-    <multiplayer supported="true"/>
-	
-	    <l10n>
+Changelog 1.2.0.0
+- Licht korrigiert
+- Sound verbessert
+- Triggerbereiche korrigiert
+- Ladehöhenanpassungen für Hof Bergmann Paletten]]></de>
+	</description>
+	<iconFilename>icon.dds</iconFilename>
+	<multiplayer supported="true"/>
+	<l10n>
 		<!-- Open/Close Door -->
-        <text name="doorOpen">
-            <en>Open Doors</en>
-            <de>Türen öffnen</de>
-        </text>
-        <text name="doorClose">
-            <en>Close Doors</en>
-            <de>Türen schließen</de>
-        </text>
+		<text name="doorOpen">
+			<en>Open Doors</en>
+			<de>Türen öffnen</de>
+		</text>
+		<text name="doorClose">
+			<en>Close Doors</en>
+			<de>Türen schließen</de>
+		</text>
 		<!-- RUL Config -->
-        <text name="configuration_rul">
-            <en>Beaconlights</en>
-            <de>Rundumleuchten</de>
-        </text>
-        <text name="rul_1">
-            <en>No beaconlights</en>
-            <de>Keine RULs</de>
-        </text>
-        <text name="rul_2">
-            <en>Beaconlight left</en>
-            <de>RUL links</de>
-        </text>
-        <text name="rul_3">
-            <en>Left/Right</en>
-            <de>RUL Links/Rechts</de>
-        </text>
-        <text name="rul_4">
-            <en>Left/Right/Back</en>
-            <de>Links/Rechts/Hinten</de>
-        </text>
-        <text name="rul_5">
-            <en>2x Beacon Bar</en>
-            <de>2x RUL Leiste</de>
-        </text>
-        <text name="rul_6">
-            <en>4x Beacon Bar</en>
-            <de>4x RUL Leiste</de>
-        </text>
-        <text name="function_sprinter">
-            <en>Sprinter for transport</en>
-            <de>Sprinter zum Transport</de>
-        </text>
-    </l10n>
-	
+		<text name="configuration_rul">
+			<en>Beaconlights</en>
+			<de>Rundumleuchten</de>
+		</text>
+		<text name="rul_1">
+			<en>No beaconlights</en>
+			<de>Keine RULs</de>
+		</text>
+		<text name="rul_2">
+			<en>Beaconlight left</en>
+			<de>RUL links</de>
+		</text>
+		<text name="rul_3">
+			<en>Left/Right</en>
+			<de>RUL Links/Rechts</de>
+		</text>
+		<text name="rul_4">
+			<en>Left/Right/Back</en>
+			<de>Links/Rechts/Hinten</de>
+		</text>
+		<text name="rul_5">
+			<en>2x Beacon Bar</en>
+			<de>2x RUL Leiste</de>
+		</text>
+		<text name="rul_6">
+			<en>4x Beacon Bar</en>
+			<de>4x RUL Leiste</de>
+		</text>
+		<text name="function_sprinter">
+			<en>Sprinter for transport. Has Autoload when Basemod available.</en>
+			<de>Sprinter zum Transport. Hat Autoload wenn der Basismod verfügbar ist.</de>
+		</text>
+	</l10n>
 	<extraSourceFiles>
-		<sourceFile filename="scripts/AddPalletAutoload.lua" />
+		<sourceFile filename="scripts/AddPalletAutoload.lua"/>
 	</extraSourceFiles>
-	
-    <storeItems>
-        <storeItem xmlFilename="sprinter.xml"/>
+	<storeItems>
+		<storeItem xmlFilename="sprinter.xml"/>
 		<storeItem xmlFilename="sprinterE.xml"/>
-    </storeItems>
-	
+	</storeItems>
 	<vehicleTypes>
 		<type name="PalletAutoLoaderCar" parent="car" filename="$dataS/scripts/vehicles/Vehicle.lua">
 		</type>
-	</vehicleTypes>	
-	
-    <brands>
-        <brand name="MERCEDES" title="Mercedes Benz" image="brand_Mercedes.dds"/>
-    </brands>
-	
+	</vehicleTypes>
+	<brands>
+		<brand name="MERCEDES" title="Mercedes Benz" image="brand_Mercedes.dds"/>
+	</brands>
 </modDesc>
