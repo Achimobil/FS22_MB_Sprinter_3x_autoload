@@ -4,3 +4,4 @@
 *.xcf
 *.png
 store/*.png
+images
