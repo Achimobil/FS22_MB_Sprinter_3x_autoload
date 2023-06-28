@@ -2,7 +2,7 @@
 <modDesc descVersion="75">
 	<author>Achimobil</author>
 	<contributor>Farming-Freunde</contributor>
-	<version>1.2.0.0</version>
+	<version>1.2.0.0_beta_1</version>
 	<title>
 		<en>MB Sprinter 3x AL Edition</en>
 		<de>MB Sprinter 3x AL Edition</de>
@@ -45,7 +45,7 @@ Changelog 1.2.0.0
 - Triggerbereiche korrigiert
 - Ladehöhenanpassungen für Hof Bergmann Paletten]]></de>
 	</description>
-	<iconFilename>icon.dds</iconFilename>
+	<iconFilename>icon_MB_Sprinter_3x_autoload.dds</iconFilename>
 	<multiplayer supported="true"/>
 	<l10n>
 		<!-- Open/Close Door -->
