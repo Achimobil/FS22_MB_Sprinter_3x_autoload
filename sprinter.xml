@@ -26,7 +26,7 @@
 		</components>
 		<schemaOverlay attacherJointPosition="0 0" name="CAR"/>
 		<mapHotspot type="CAR"/>
-		<sounds filename="$data/vehicles/lizard/pickup1986/sounds/pickup1986.xml"/>
+		<sounds filename="$data/vehicles/lizard/pickup1986/sounds/pickup1986.xml" volumeFactor="1"/>
 	</base>
 	<aPalletAutoLoader>
 		<aPalletAutoLoaderConfigurations>
@@ -201,6 +201,9 @@
 						<dashboard valueType="fillLevel" displayType="ANIMATION" groups="MOTOR_ACTIVE" animName="fuelDisplay"/>
 					</fillUnit>
 					<fillUnit capacity="28" fillTypes="def" showOnHud="false" showInShop="false" unitTextOverride="$l10n_unit_literShort"/>
+					<fillUnit unitTextOverride="$l10n_unit_kw" showOnHud="false" showInShop="false" fillTypes="ELECTRICCHARGE" capacity="85">
+						<dashboard valueType="fillLevel" displayType="ANIMATION" groups="MOTOR_ACTIVE" animName="fuelDisplay"/>
+					</fillUnit>
 				</fillUnits>
 			</fillUnitConfiguration>
 		</fillUnitConfigurations>
@@ -211,9 +214,12 @@
 				<consumer fillUnitIndex="1" usage="55" fillType="diesel"/>
 				<consumer fillUnitIndex="2" usage="45" fillType="def"/>
 			</consumerConfiguration>
+			<consumerConfiguration consumersEmptyWarning="$l10n_warning_motorBatteryEmpty">
+				<consumer fillUnitIndex="3" usage="16" fillType="electricCharge"/>
+			</consumerConfiguration>
 		</consumerConfigurations>
 		<motorConfigurations>
-			<motorConfiguration name="311 CDI" hp="109" price="0">
+			<motorConfiguration name="311 CDI" hp="109" price="0" consumerConfigurationIndex="1" isSelectable="true">
 				<motor torqueScale="0.462" minRpm="1000" maxRpm="6000" maxForwardSpeed="100" maxBackwardSpeed="45" brakeForce="2" lowBrakeForceScale="0.22" dampingRateScale="0.4">
 					<torque rpm="1000" torque="0.9"/>
 					<torque rpm="2400" torque="1"/>
@@ -239,7 +245,7 @@
 				<objectChange node="318" visibilityActive="false"/>
 				<objectChange node="ePower" visibilityActive="false"/>
 			</motorConfiguration>
-			<motorConfiguration name="313 CDI" hp="129" price="0">
+			<motorConfiguration name="313 CDI" hp="129" price="0" consumerConfigurationIndex="1" isSelectable="true">
 				<motor torqueScale="0.503" minRpm="1000" maxRpm="6000" maxForwardSpeed="100" maxBackwardSpeed="45" brakeForce="2" lowBrakeForceScale="0.22" dampingRateScale="0.4">
 					<torque rpm="1000" torque="0.9"/>
 					<torque rpm="2400" torque="1"/>
@@ -265,7 +271,7 @@
 				<objectChange node="318" visibilityActive="false"/>
 				<objectChange node="ePower" visibilityActive="false"/>
 			</motorConfiguration>
-			<motorConfiguration name="316 CDI" hp="163" price="0">
+			<motorConfiguration name="316 CDI" hp="163" price="0" consumerConfigurationIndex="1" isSelectable="true">
 				<motor torqueScale="0.636" minRpm="1000" maxRpm="6000" maxForwardSpeed="100" maxBackwardSpeed="45" brakeForce="2" lowBrakeForceScale="0.22" dampingRateScale="0.4">
 					<torque rpm="1000" torque="0.9"/>
 					<torque rpm="2400" torque="1"/>
@@ -291,7 +297,7 @@
 				<objectChange node="318" visibilityActive="false"/>
 				<objectChange node="ePower" visibilityActive="false"/>
 			</motorConfiguration>
-			<motorConfiguration name="318 CDI" hp="184" price="0">
+			<motorConfiguration name="318 CDI" hp="184" price="0" consumerConfigurationIndex="1" isSelectable="true">
 				<motor torqueScale="0.718" minRpm="1000" maxRpm="6000" maxForwardSpeed="100" maxBackwardSpeed="45" brakeForce="2" lowBrakeForceScale="0.22" dampingRateScale="0.4">
 					<torque rpm="1000" torque="0.9"/>
 					<torque rpm="2400" torque="1"/>
@@ -316,6 +322,42 @@
 				<objectChange node="316" visibilityActive="false"/>
 				<objectChange node="318" visibilityActive="true"/>
 				<objectChange node="ePower" visibilityActive="false"/>
+			</motorConfiguration>
+			<motorConfiguration name="eSprinter" hp="116" price="0" consumerConfigurationIndex="2" isSelectable="false">
+				<motor torqueScale="0.514" minRpm="1000" maxRpm="6000" maxForwardSpeed="100" maxBackwardSpeed="45" brakeForce="2" accelerationLimit="5" lowBrakeForceScale="0.22" dampingRateScale="0.4">
+					<torque rpm="1000" torque="0.9"/>
+					<torque rpm="2400" torque="1"/>
+					<torque rpm="3480" torque="1"/>
+					<torque rpm="4560" torque="0.75"/>
+					<torque rpm="5280" torque="0.63"/>
+					<torque rpm="6000" torque="0.2"/>
+				</motor>
+				<transmission minForwardGearRatio="19" maxForwardGearRatio="300" minBackwardGearRatio="37.5" maxBackwardGearRatio="300" name="$l10n_info_transmission_cvt"/>
+				<objectChange node="CDI" visibilityActive="false"/>
+				<objectChange node="311" visibilityActive="false"/>
+				<objectChange node="313" visibilityActive="false"/>
+				<objectChange node="316" visibilityActive="false"/>
+				<objectChange node="318" visibilityActive="false"/>
+				<objectChange node="ePower" visibilityActive="true"/>
+				<objectChange node="exhaustParticle" visibilityActive="false"/>
+			</motorConfiguration>
+			<motorConfiguration name="eSprinter+" hp="202" price="0" consumerConfigurationIndex="2" isSelectable="false">
+				<motor torqueScale="0.894" minRpm="1000" maxRpm="6000" maxForwardSpeed="100" maxBackwardSpeed="45" brakeForce="2" accelerationLimit="5" lowBrakeForceScale="0.22" dampingRateScale="0.4">
+					<torque rpm="1000" torque="0.9"/>
+					<torque rpm="2400" torque="1"/>
+					<torque rpm="3480" torque="1"/>
+					<torque rpm="4560" torque="0.75"/>
+					<torque rpm="5280" torque="0.63"/>
+					<torque rpm="6000" torque="0.2"/>
+				</motor>
+				<transmission minForwardGearRatio="19" maxForwardGearRatio="300" minBackwardGearRatio="37.5" maxBackwardGearRatio="300" name="$l10n_info_transmission_cvt"/>
+				<objectChange node="CDI" visibilityActive="false"/>
+				<objectChange node="311" visibilityActive="false"/>
+				<objectChange node="313" visibilityActive="false"/>
+				<objectChange node="316" visibilityActive="false"/>
+				<objectChange node="318" visibilityActive="false"/>
+				<objectChange node="ePower" visibilityActive="true"/>
+				<objectChange node="exhaustParticle" visibilityActive="false"/>
 			</motorConfiguration>
 		</motorConfigurations>
 		<differentialConfigurations>
@@ -353,7 +395,7 @@
 		</animation>
 		<animation name="sideDoor">
 			<part endRot="0 0 0" endTime="0.75" endTrans="-0.98 1.51 -0.35" node="sideDoor" startTime="0.0" startTrans="-0.808 1.51 -0.35"/>
-			<part endRot="0 0 0" endTime="2.0" endTrans="-0.98 1.51 -1.747" node="sideDoor" startTime="0.75" startTrans="-0.98 1.51 -0.35"/>
+			<part endRot="0 0 0" endTime="2.5" endTrans="-0.98 1.51 -1.747" node="sideDoor" startTime="0.75" startTrans="-0.98 1.51 -0.35"/>
 			<!-- Left -->
 			<part endRot="0 -90 0" endTime="1.5" node="backDoorLeftNode" startRot="0 0 0" startTime="0.0"/>
 			<part endRot="0 -90 0" endTime="2.5" node="backDoorLeft" startRot="0 0 0" startTime="1.5"/>
@@ -392,7 +434,7 @@
 			<movingTool node="sideDoor" playSound="true"/>
 		</movingTools>
 		<sounds>
-			<hydraulic linkNode="mb_sprinter_main_component1" template="PICKUP_TRUNK"/>
+			<hydraulic linkNode="mb_sprinter_main_component1" template="PICKUP_TRUNK" loops="1"/>
 		</sounds>
 	</cylindered>
 	<tensionBelts>
