@@ -2,9 +2,9 @@
 <modDesc descVersion="75">
 	<author>Achimobil</author>
 	<contributor>Farming-Freunde</contributor>
-	<version>1.2.0.0</version>
+	<version>1.2.0.1</version>
 	<title>
-		<en>MB Sprinter 3x AL Edition</en>
+		<en>MB Sprinter 3x AL</en>
 	</title>
 	<description>
 		<en>
@@ -15,10 +15,14 @@ Without it, it is just a fancy Sprinter as diesel and electric version.
 Loadable amount varies depending on the load.
 
 Diesel power: 80-135 kW / 109-184 hp with manual transmission
-Electric power: 85-149 kW / 202-184 hp with continuously variable transmission
+Electric power: 85-149 kW / 202-184 hp
 Diesel tank: 120 l
 Price 40.000 €
 Color choice for cabin and rims
+
+Changelog 1.2.0.1
+- New icons created
+- Unnecessary files removed
 
 Changelog 1.2.0.0
 - Light corrected
@@ -33,10 +37,14 @@ Ohne diesen ist er nur ein schicker Sprinter als Diesel und Elektro Version
 Ladbare Menge variiert je nach Ladegut.
 
 Leistung Diesel: 80-135 kW / 109-184 PS mit manueller Schaltung
-Leistung Elektro: 85-149 kW / 202-184 PS mit stufenloser Schaltung
+Leistung Elektro: 85-149 kW / 202-184 PS
 Dieseltank: 120 l
 Preis 40.000 €
 Farbwahl für Kabine und Felgen
+
+Changelog 1.2.0.1
+- Neue Icons erstellt
+- Unnötige Dateien entfernt
 
 Changelog 1.2.0.0
 - Licht korrigiert
