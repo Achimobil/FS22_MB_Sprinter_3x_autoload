@@ -8,11 +8,10 @@
 	</title>
 	<description>
 		<en>
-<![CDATA[This is the Mercedes Benz Sprinter 3x from FSM team from LS19.
-Extended by Achimobil with the autoloader with permission of Chefkoch.
+<![CDATA[This is the Mercedes Benz Sprinter 3x with pallets Autoload.
 Autoload is automatically available when the base mod is available.
 Without it, it is just a fancy Sprinter as diesel and electric version.
-Loadable amount varies depending on the load.
+Loadable quantity varies depending on the load.
 
 Diesel power: 80-135 kW / 109-184 hp with manual transmission
 Electric power: 85-149 kW / 202-184 hp
@@ -20,9 +19,12 @@ Diesel tank: 120 l
 Price 40.000 €
 Color choice for cabin and rims
 
+Thanks to Chefkoch who brought the Sprinter from the FSM team to LS22 and allowed me to publish it with autoload.
+
 Changelog 1.2.0.1
 - New icons created
 - Unnecessary files removed
+- Various changes to configs and description
 
 Changelog 1.2.0.0
 - Light corrected
@@ -30,8 +32,7 @@ Changelog 1.2.0.0
 - Trigger corrected
 - Loading height adjustments for Hof Bergmann pallets]]></en>
 		<de>
-<![CDATA[Das ist der Mercedes Benz Sprinter 3x vom FSM-Team aus LS19.
-Erweitert von Achimobil um den Autoloader mit Genehmigung von Chefkoch.
+<![CDATA[Das ist der Mercedes Benz Sprinter 3x mit Paletten Autoload.
 Autoload ist automatisch verfügbar, wenn der Basismod verfügbar ist.
 Ohne diesen ist er nur ein schicker Sprinter als Diesel und Elektro Version
 Ladbare Menge variiert je nach Ladegut.
@@ -40,11 +41,14 @@ Leistung Diesel: 80-135 kW / 109-184 PS mit manueller Schaltung
 Leistung Elektro: 85-149 kW / 202-184 PS
 Dieseltank: 120 l
 Preis 40.000 €
-Farbwahl für Kabine und Felgen
+Farbwahl für Kabine und Felgen.
+
+Danke an Chefkoch der den Sprinter vom FSM-Team in den LS22 gebracht hat und mir erlaubt hat diesen mit Autoload zu veröffentlichen.
 
 Changelog 1.2.0.1
 - Neue Icons erstellt
 - Unnötige Dateien entfernt
+- Verschiedene anpassungen an den Konfigurationen und der Beschreibung
 
 Changelog 1.2.0.0
 - Licht korrigiert
