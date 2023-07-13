@@ -390,8 +390,16 @@
 	</drivable>
 	<animations>
 		<animation name="wiperFrontAnimation">
-			<part endRot="0 -47 -67" endTime="0.5" node="wiper01" startRot="0 0 0" startTime="0.0"/>
-			<part endRot="0 -33 -64" endTime="0.5" node="wiper02" startRot="0 0 0" startTime="0.0"/>
+			<part node="wiper01" startTime="0.0" endTime="0.1" startRot="0 0 0" endRot="0 -18 -18"/>
+			<part node="wiper01" startTime="0.1" endTime="0.2" startRot="0 -18 -18" endRot="0 -33 -36"/>
+			<part node="wiper01" startTime="0.2" endTime="0.3" startRot="0 -33 -36" endRot="0 -43 -54"/>
+			<part node="wiper01" startTime="0.3" endTime="0.4" startRot="0 -43 -54" endRot="0 -49 -72"/>
+			<part node="wiper01" startTime="0.4" endTime="0.5" startRot="0 -49 -72" endRot="0 -53 -90"/>
+			<part node="wiper02" startTime="0.0" endTime="0.1" startRot="0 0 0" endRot="0 -14 -18"/>
+			<part node="wiper02" startTime="0.1" endTime="0.2" startRot="0 -14 -18" endRot="0 -24 -36"/>
+			<part node="wiper02" startTime="0.2" endTime="0.3" startRot="0 -24 -36" endRot="0 -31 -54"/>
+			<part node="wiper02" startTime="0.3" endTime="0.4" startRot="0 -31 -54" endRot="0 -35 -72"/>
+			<part node="wiper02" startTime="0.4" endTime="0.5" startRot="0 -35 -72" endRot="0 -36 -90"/>
 		</animation>
 		<animation name="sideDoor">
 			<part endRot="0 0 0" endTime="0.75" endTrans="-0.98 1.51 -0.35" node="sideDoor" startTime="0.0" startTrans="-0.808 1.51 -0.35"/>
