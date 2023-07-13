@@ -671,9 +671,9 @@
 		<i3dMapping id="licensePlateFront" node="0>15|3|0"/>
 		<i3dMapping id="licensePlateBack" node="0>9|3|0|0"/>
 		<i3dMapping id="licensePlateLightHigh" node="0>9|3|0|2"/>
-		<i3dMapping id="pickupTriggerNode" node="0>20|0"/>
-		<i3dMapping id="pickupTriggerNode2" node="0>20|1"/>
-		<i3dMapping id="triggerNode" node="0>20|2"/>
-		<i3dMapping id="loadingBase" node="0>20|3"/>
+		<i3dMapping id="pickupTriggerNode" node="0>19|0"/>
+		<i3dMapping id="pickupTriggerNode2" node="0>19|1"/>
+		<i3dMapping id="triggerNode" node="0>19|2"/>
+		<i3dMapping id="loadingBase" node="0>19|3"/>
 	</i3dMappings>
 </vehicle>
