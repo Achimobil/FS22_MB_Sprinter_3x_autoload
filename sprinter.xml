@@ -545,6 +545,8 @@
 	</ai>
 	<foliageBending>
 		<bendingNode minX="-1" maxX="1" minZ="-2.75" maxZ="2.65" yOffset="0.4"/>
+		<bendingNode node="backDoorLeftColi"/>
+		<bendingNode node="backDoorRightColi"/>
 	</foliageBending>
 	<dashboard>
 		<groups>
@@ -586,9 +588,11 @@
 		<i3dMapping id="aiCollisionNode" node="0>14|0"/>
 		<i3dMapping id="sideDoor" node="0>9|2"/>
 		<i3dMapping id="backDoorLeftNode" node="0>9|3"/>
-		<i3dMapping id="backDoorRightNode" node="0>9|4"/>
 		<i3dMapping id="backDoorLeft" node="0>9|3|0"/>
+		<i3dMapping id="backDoorLeftColi" node="0>9|3|0|1"/>
+		<i3dMapping id="backDoorRightNode" node="0>9|4"/>
 		<i3dMapping id="backDoorRight" node="0>9|4|0"/>
+		<i3dMapping id="backDoorRightColi" node="0>9|4|0|1"/>
 		<i3dMapping id="sideMarker10Orange1" node="0>13|0|0"/>
 		<i3dMapping id="sideMarker10Orange2" node="0>13|0|1"/>
 		<i3dMapping id="sideMarker10Orange3" node="0>13|0|2"/>
