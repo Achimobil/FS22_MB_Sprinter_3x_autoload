@@ -22,7 +22,7 @@
 		<filename>sprinter.i3d</filename>
 		<size width="2.2" length="6"/>
 		<components>
-			<component centerOfMass="0 0 0.437" solverIterationCount="10" mass="3500"/>
+			<component centerOfMass="0 0 0.437" solverIterationCount="10" mass="2230"/>
 		</components>
 		<schemaOverlay attacherJointPosition="0 0" name="CAR"/>
 		<mapHotspot type="CAR"/>
@@ -220,23 +220,23 @@
 		</consumerConfigurations>
 		<motorConfigurations>
 			<motorConfiguration name="311 CDI" hp="109" price="0" consumerConfigurationIndex="1" isSelectable="true">
-				<motor torqueScale="0.462" minRpm="1000" maxRpm="6000" maxForwardSpeed="100" maxBackwardSpeed="45" brakeForce="2" lowBrakeForceScale="0.22" dampingRateScale="0.4">
+				<motor torqueScale="0.186" minRpm="1000" maxRpm="6000" maxForwardSpeed="100" maxBackwardSpeed="22" brakeForce="7" lowBrakeForceScale="0.22" dampingRateScale="0.4">
 					<torque rpm="1000" torque="0.9"/>
 					<torque rpm="2400" torque="1"/>
 					<torque rpm="3480" torque="1"/>
-					<torque rpm="4560" torque="0.75"/>
-					<torque rpm="5280" torque="0.63"/>
-					<torque rpm="6000" torque="0.2"/>
+					<torque rpm="4560" torque="0.9"/>
+					<torque rpm="5280" torque="0.77"/>
+					<torque rpm="6000" torque="0.65"/>
 				</motor>
-				<transmission autoGearChangeTime="1" gearChangeTime="0.4" name="$l10n_info_transmission_manual" axleRatio="25" startGearThreshold="0.3">
+				<transmission autoGearChangeTime="1" gearChangeTime="0.4" name="$l10n_info_transmission_manual" axleRatio="21.7" startGearThreshold="0.3">
 					<directionChange useGear="true"/>
-					<backwardGear gearRatio="4.066" name="R"/>
-					<forwardGear gearRatio="4.784"/>
-					<forwardGear gearRatio="2.423"/>
-					<forwardGear gearRatio="1.443"/>
-					<forwardGear gearRatio="1.000"/>
-					<forwardGear gearRatio="0.826"/>
-					<forwardGear gearRatio="0.643"/>
+					<backwardGear gearRatio="4.06" name="R"/>
+					<forwardGear gearRatio="4.45"/>
+					<forwardGear gearRatio="2.61"/>
+					<forwardGear gearRatio="1.72"/>
+					<forwardGear gearRatio="1.24"/>
+					<forwardGear gearRatio="1"/>
+					<forwardGear gearRatio="0.83"/>
 				</transmission>
 				<objectChange node="CDI" visibilityActive="true"/>
 				<objectChange node="311" visibilityActive="true"/>
@@ -246,23 +246,23 @@
 				<objectChange node="ePower" visibilityActive="false"/>
 			</motorConfiguration>
 			<motorConfiguration name="313 CDI" hp="129" price="0" consumerConfigurationIndex="1" isSelectable="true">
-				<motor torqueScale="0.503" minRpm="1000" maxRpm="6000" maxForwardSpeed="100" maxBackwardSpeed="45" brakeForce="2" lowBrakeForceScale="0.22" dampingRateScale="0.4">
+				<motor torqueScale="0.22" minRpm="1000" maxRpm="6000" maxForwardSpeed="100" maxBackwardSpeed="22" brakeForce="7" lowBrakeForceScale="0.22" dampingRateScale="0.4">
 					<torque rpm="1000" torque="0.9"/>
 					<torque rpm="2400" torque="1"/>
 					<torque rpm="3480" torque="1"/>
-					<torque rpm="4560" torque="0.75"/>
-					<torque rpm="5280" torque="0.63"/>
-					<torque rpm="6000" torque="0.2"/>
+					<torque rpm="4560" torque="0.9"/>
+					<torque rpm="5280" torque="0.77"/>
+					<torque rpm="6000" torque="0.65"/>
 				</motor>
-				<transmission autoGearChangeTime="1" gearChangeTime="0.4" name="$l10n_info_transmission_manual" axleRatio="25" startGearThreshold="0.3">
+				<transmission autoGearChangeTime="1" gearChangeTime="0.4" name="$l10n_info_transmission_manual" axleRatio="21.7" startGearThreshold="0.3">
 					<directionChange useGear="true"/>
-					<backwardGear gearRatio="4.066" name="R"/>
-					<forwardGear gearRatio="4.784"/>
-					<forwardGear gearRatio="2.423"/>
-					<forwardGear gearRatio="1.443"/>
-					<forwardGear gearRatio="1.000"/>
-					<forwardGear gearRatio="0.826"/>
-					<forwardGear gearRatio="0.643"/>
+					<backwardGear gearRatio="4.06" name="R"/>
+					<forwardGear gearRatio="4.45"/>
+					<forwardGear gearRatio="2.61"/>
+					<forwardGear gearRatio="1.72"/>
+					<forwardGear gearRatio="1.24"/>
+					<forwardGear gearRatio="1"/>
+					<forwardGear gearRatio="0.83"/>
 				</transmission>
 				<objectChange node="CDI" visibilityActive="true"/>
 				<objectChange node="311" visibilityActive="false"/>
@@ -272,23 +272,23 @@
 				<objectChange node="ePower" visibilityActive="false"/>
 			</motorConfiguration>
 			<motorConfiguration name="316 CDI" hp="163" price="0" consumerConfigurationIndex="1" isSelectable="true">
-				<motor torqueScale="0.636" minRpm="1000" maxRpm="6000" maxForwardSpeed="100" maxBackwardSpeed="45" brakeForce="2" lowBrakeForceScale="0.22" dampingRateScale="0.4">
+				<motor torqueScale="0.278" minRpm="1000" maxRpm="6000" maxForwardSpeed="100" maxBackwardSpeed="22" brakeForce="7" lowBrakeForceScale="0.22" dampingRateScale="0.4">
 					<torque rpm="1000" torque="0.9"/>
 					<torque rpm="2400" torque="1"/>
 					<torque rpm="3480" torque="1"/>
-					<torque rpm="4560" torque="0.75"/>
-					<torque rpm="5280" torque="0.63"/>
-					<torque rpm="6000" torque="0.2"/>
+					<torque rpm="4560" torque="0.9"/>
+					<torque rpm="5280" torque="0.77"/>
+					<torque rpm="6000" torque="0.65"/>
 				</motor>
-				<transmission autoGearChangeTime="1" gearChangeTime="0.4" name="$l10n_info_transmission_manual" axleRatio="25" startGearThreshold="0.3">
+				<transmission autoGearChangeTime="1" gearChangeTime="0.4" name="$l10n_info_transmission_manual" axleRatio="21.7" startGearThreshold="0.3">
 					<directionChange useGear="true"/>
-					<backwardGear gearRatio="4.066" name="R"/>
-					<forwardGear gearRatio="4.784"/>
-					<forwardGear gearRatio="2.423"/>
-					<forwardGear gearRatio="1.443"/>
-					<forwardGear gearRatio="1.000"/>
-					<forwardGear gearRatio="0.826"/>
-					<forwardGear gearRatio="0.643"/>
+					<backwardGear gearRatio="4.06" name="R"/>
+					<forwardGear gearRatio="4.45"/>
+					<forwardGear gearRatio="2.61"/>
+					<forwardGear gearRatio="1.72"/>
+					<forwardGear gearRatio="1.24"/>
+					<forwardGear gearRatio="1"/>
+					<forwardGear gearRatio="0.83"/>
 				</transmission>
 				<objectChange node="CDI" visibilityActive="true"/>
 				<objectChange node="311" visibilityActive="false"/>
@@ -298,23 +298,23 @@
 				<objectChange node="ePower" visibilityActive="false"/>
 			</motorConfiguration>
 			<motorConfiguration name="318 CDI" hp="184" price="0" consumerConfigurationIndex="1" isSelectable="true">
-				<motor torqueScale="0.718" minRpm="1000" maxRpm="6000" maxForwardSpeed="100" maxBackwardSpeed="45" brakeForce="2" lowBrakeForceScale="0.22" dampingRateScale="0.4">
+				<motor torqueScale="0.314" minRpm="1000" maxRpm="6000" maxForwardSpeed="100" maxBackwardSpeed="22" brakeForce="7" lowBrakeForceScale="0.22" dampingRateScale="0.4">
 					<torque rpm="1000" torque="0.9"/>
 					<torque rpm="2400" torque="1"/>
 					<torque rpm="3480" torque="1"/>
-					<torque rpm="4560" torque="0.75"/>
-					<torque rpm="5280" torque="0.63"/>
-					<torque rpm="6000" torque="0.2"/>
+					<torque rpm="4560" torque="0.9"/>
+					<torque rpm="5280" torque="0.77"/>
+					<torque rpm="6000" torque="0.65"/>
 				</motor>
-				<transmission autoGearChangeTime="1" gearChangeTime="0.4" name="$l10n_info_transmission_manual" axleRatio="25" startGearThreshold="0.3">
+				<transmission autoGearChangeTime="1" gearChangeTime="0.4" name="$l10n_info_transmission_manual" axleRatio="21.7" startGearThreshold="0.3">
 					<directionChange useGear="true"/>
-					<backwardGear gearRatio="4.066" name="R"/>
-					<forwardGear gearRatio="4.784"/>
-					<forwardGear gearRatio="2.423"/>
-					<forwardGear gearRatio="1.443"/>
-					<forwardGear gearRatio="1.000"/>
-					<forwardGear gearRatio="0.826"/>
-					<forwardGear gearRatio="0.643"/>
+					<backwardGear gearRatio="4.06" name="R"/>
+					<forwardGear gearRatio="4.45"/>
+					<forwardGear gearRatio="2.61"/>
+					<forwardGear gearRatio="1.72"/>
+					<forwardGear gearRatio="1.24"/>
+					<forwardGear gearRatio="1"/>
+					<forwardGear gearRatio="0.83"/>
 				</transmission>
 				<objectChange node="CDI" visibilityActive="true"/>
 				<objectChange node="311" visibilityActive="false"/>
@@ -324,15 +324,15 @@
 				<objectChange node="ePower" visibilityActive="false"/>
 			</motorConfiguration>
 			<motorConfiguration name="eSprinter" hp="116" price="0" consumerConfigurationIndex="2" isSelectable="false">
-				<motor torqueScale="0.514" minRpm="1000" maxRpm="6000" maxForwardSpeed="100" maxBackwardSpeed="45" brakeForce="2" accelerationLimit="5" lowBrakeForceScale="0.22" dampingRateScale="0.4">
+				<motor torqueScale="0.198" minRpm="1000" maxRpm="6000" maxForwardSpeed="100" maxBackwardSpeed="22" brakeForce="7" accelerationLimit="5" lowBrakeForceScale="0.22" dampingRateScale="0.4">
 					<torque rpm="1000" torque="0.9"/>
 					<torque rpm="2400" torque="1"/>
 					<torque rpm="3480" torque="1"/>
-					<torque rpm="4560" torque="0.75"/>
-					<torque rpm="5280" torque="0.63"/>
-					<torque rpm="6000" torque="0.2"/>
+					<torque rpm="4560" torque="0.9"/>
+					<torque rpm="5280" torque="0.77"/>
+					<torque rpm="6000" torque="0.65"/>
 				</motor>
-				<transmission minForwardGearRatio="19" maxForwardGearRatio="300" minBackwardGearRatio="37.5" maxBackwardGearRatio="300" name="$l10n_info_transmission_cvt"/>
+				<transmission minForwardGearRatio="18" maxForwardGearRatio="300" minBackwardGearRatio="32" maxBackwardGearRatio="300" name="$l10n_info_transmission_cvt"/>
 				<objectChange node="CDI" visibilityActive="false"/>
 				<objectChange node="311" visibilityActive="false"/>
 				<objectChange node="313" visibilityActive="false"/>
@@ -342,15 +342,15 @@
 				<objectChange node="exhaustParticle" visibilityActive="false"/>
 			</motorConfiguration>
 			<motorConfiguration name="eSprinter+" hp="202" price="0" consumerConfigurationIndex="2" isSelectable="false">
-				<motor torqueScale="0.894" minRpm="1000" maxRpm="6000" maxForwardSpeed="100" maxBackwardSpeed="45" brakeForce="2" accelerationLimit="5" lowBrakeForceScale="0.22" dampingRateScale="0.4">
+				<motor torqueScale="0.345" minRpm="1000" maxRpm="6000" maxForwardSpeed="100" maxBackwardSpeed="22" brakeForce="7" accelerationLimit="5" lowBrakeForceScale="0.22" dampingRateScale="0.4">
 					<torque rpm="1000" torque="0.9"/>
 					<torque rpm="2400" torque="1"/>
 					<torque rpm="3480" torque="1"/>
-					<torque rpm="4560" torque="0.75"/>
-					<torque rpm="5280" torque="0.63"/>
-					<torque rpm="6000" torque="0.2"/>
+					<torque rpm="4560" torque="0.9"/>
+					<torque rpm="5280" torque="0.77"/>
+					<torque rpm="6000" torque="0.65"/>
 				</motor>
-				<transmission minForwardGearRatio="19" maxForwardGearRatio="300" minBackwardGearRatio="37.5" maxBackwardGearRatio="300" name="$l10n_info_transmission_cvt"/>
+				<transmission minForwardGearRatio="18" maxForwardGearRatio="300" minBackwardGearRatio="32" maxBackwardGearRatio="300" name="$l10n_info_transmission_cvt"/>
 				<objectChange node="CDI" visibilityActive="false"/>
 				<objectChange node="311" visibilityActive="false"/>
 				<objectChange node="313" visibilityActive="false"/>
