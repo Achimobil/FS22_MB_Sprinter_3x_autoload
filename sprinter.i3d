@@ -368,7 +368,6 @@
           <Shape shapeId="63" name="sideColi" translation="-0.983537 1.52088 -2.11143" visibility="false" compoundChild="true" collisionMask="8194" nodeId="273" materialIds="15" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
           <Shape shapeId="64" name="roofColi" translation="1.19209e-07 2.70143 -1.26174" visibility="false" compoundChild="true" collisionMask="8194" nodeId="274" materialIds="15" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
         </TransformGroup>
-        <Camera name="bastelCam" translation="-0.198455 1.3321 -4.78263" rotation="175.413 -0.298774 -180" nodeId="275" fov="60" nearClip="0.1" farClip="10000" orthographicHeight="1"/>
         <Light name="light" rotation="-40 0 -30" visibility="false" nodeId="276" type="directional" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" numShadowMapSplits="3" shadowMapSplitDistance0="16.5466" shadowMapSplitDistance1="35.9759" range="500"/>
         <TransformGroup name="autoloader" nodeId="277">
           <Shape shapeId="65" name="pickupTriggerLeft" translation="3 1.5 -0.8" kinematic="true" trigger="true" nodeId="278" materialIds="20" nonRenderable="true"/>
