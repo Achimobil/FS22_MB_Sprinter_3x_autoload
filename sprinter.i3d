@@ -15,6 +15,7 @@
     <File fileId="2" filename="$data/shared/default_normal.dds"/>
     <File fileId="8" filename="$data/shared/default_specular.dds"/>
     <File fileId="13" filename="$data/shared/numbers_diffuse.png"/>
+    <File fileId="16" filename="$data/shared/window_diffuse.dds"/>
     <File fileId="17" filename="$data/shared/window_specular.dds"/>
     <File fileId="22" filename="$data/shared/window_vmask.dds"/>
     <File fileId="26" filename="Textures/backLight_diffuse.png"/>
@@ -24,7 +25,6 @@
     <File fileId="24" filename="Textures/ePower_normal.dds"/>
     <File fileId="3" filename="Textures/global_specular.dds"/>
     <File fileId="21" filename="Textures/sideWindow_diffuse.dds"/>
-    <File fileId="16" filename="Textures/window_diffuse.dds"/>
   </Files>
 
 
@@ -59,15 +59,15 @@
       <Texture fileId="23"/>
       <Normalmap fileId="24"/>
     </Material>
-    <Material name="glass_mat" materialId="11" alphaBlending="true" customShaderId="4">
-      <Texture fileId="21"/>
-      <Glossmap fileId="22"/>
-      <CustomParameter name="RDT" value="1 1 0 0"/>
-    </Material>
     <Material name="glass_mat" materialId="12" alphaBlending="true" customShaderId="4">
       <Texture fileId="16"/>
       <Glossmap fileId="17"/>
-      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="RDT" value="1 0.7 0 0"/>
+    </Material>
+    <Material name="glass_mat" materialId="11" alphaBlending="true" customShaderId="4" shadingRate="1x2">
+      <Texture fileId="21"/>
+      <Glossmap fileId="22"/>
+      <CustomParameter name="RDT" value="1 0.7 0 0"/>
     </Material>
     <Material name="interior_mat" materialId="13" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="4" customShaderVariation="colorMask">
       <Normalmap fileId="2"/>
@@ -135,7 +135,7 @@
         <Shape shapeId="2" name="body_vis" translation="0 1.53669 -0.135485" clipDistance="300" nodeId="95" materialIds="19" castsShadows="true" receiveShadows="true"/>
         <TransformGroup name="cameras" translation="0 0 0.0147289" nodeId="96">
           <TransformGroup name="outdoorCameraTarget" translation="0 1.14423 0" rotation="-24 180 0" nodeId="97">
-            <Camera name="outdoorCamera" translation="1.107 1.38158 -0.854236" rotation="-46.1404 -6.01328 -2.71608" nodeId="98" fov="54.4322" nearClip="0.3" farClip="5000" orthographicHeight="1"/>
+            <Camera name="outdoorCamera" translation="-1.09239 0.620876 4.85483" rotation="3.04113 -25.5135 -12.2949" nodeId="98" fov="54.4322" nearClip="0.3" farClip="5000" orthographicHeight="1"/>
           </TransformGroup>
           <Camera name="indoorCamera" translation="0.504 1.927 0.768" rotation="-8 180 0" nodeId="99" fov="60" nearClip="0.1" farClip="5000" orthographicHeight="1"/>
           <TransformGroup name="cameraRaycastNode1" translation="0 1.192 2.93612" nodeId="100"/>
