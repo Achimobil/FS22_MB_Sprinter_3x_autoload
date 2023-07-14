@@ -103,7 +103,7 @@
       <Glossmap fileId="3"/>
       <CustomParameter name="colorMat0" value="1 0 0 0"/>
       <CustomParameter name="colorMat1" value="0 0 0 0"/>
-      <CustomParameter name="colorMat2" value="0.5 0.5 0.5 0"/>
+      <CustomParameter name="colorMat2" value="0.5234 0.5234 0.5234 4"/>
       <CustomParameter name="colorMat3" value="0.05 0.05 0.05 1"/>
       <CustomParameter name="colorMat4" value="0 0 0 0"/>
       <CustomParameter name="colorMat5" value="1 1 1 2"/>
@@ -134,7 +134,7 @@
         <Shape shapeId="2" name="body_vis" translation="0 1.53669 -0.135485" clipDistance="300" nodeId="372" materialIds="296" castsShadows="true" receiveShadows="true"/>
         <TransformGroup name="cameras" translation="0 0 0.0147289" nodeId="373">
           <TransformGroup name="outdoorCameraTarget" translation="0 1.14423 0" rotation="-24 180 0" nodeId="374">
-            <Camera name="outdoorCamera" translation="-0.201934 -0.0580481 -0.537067" rotation="150.321 -13.2868 -173.943" nodeId="375" fov="54.4322" nearClip="0.3" farClip="5000" orthographicHeight="1"/>
+            <Camera name="outdoorCamera" translation="-2.89607 2.19791 -2.97503" rotation="133.47 -39.6957 -158.275" nodeId="375" fov="54.4322" nearClip="0.3" farClip="5000" orthographicHeight="1"/>
           </TransformGroup>
           <Camera name="indoorCamera" translation="0.504 1.927 0.768" rotation="-8 180 0" nodeId="376" fov="60" nearClip="0.1" farClip="5000" orthographicHeight="1"/>
           <TransformGroup name="cameraRaycastNode1" translation="0 1.192 2.93612" nodeId="377"/>
