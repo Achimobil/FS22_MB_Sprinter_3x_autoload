@@ -6,40 +6,38 @@
   </Asset>
 
   <Files>
-    <File fileId="15" filename="$data/fs19support/shaders/dashboardSymbolsShader.xml"/>
     <File fileId="12" filename="$data/shaders/glowShader.xml"/>
-    <File fileId="20" filename="$data/shaders/mirrorShader.xml"/>
+    <File fileId="19" filename="$data/shaders/mirrorShader.xml"/>
     <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
-    <File fileId="14" filename="$data/shared/assets/dashboardSymbols_diffuse.png"/>
+    <File fileId="14" filename="$data/shared/assets/dashboardSymbols_diffuse.dds"/>
     <File fileId="11" filename="$data/shared/clearPlastic_diffuse.dds"/>
     <File fileId="2" filename="$data/shared/default_normal.dds"/>
     <File fileId="8" filename="$data/shared/default_specular.dds"/>
     <File fileId="13" filename="$data/shared/numbers_diffuse.png"/>
-    <File fileId="16" filename="$data/shared/window_diffuse.dds"/>
-    <File fileId="17" filename="$data/shared/window_specular.dds"/>
-    <File fileId="22" filename="$data/shared/window_vmask.dds"/>
-    <File fileId="26" filename="Textures/backLight_diffuse.png"/>
+    <File fileId="15" filename="$data/shared/window_diffuse.dds"/>
+    <File fileId="16" filename="$data/shared/window_specular.dds"/>
+    <File fileId="21" filename="$data/shared/window_vmask.dds"/>
+    <File fileId="25" filename="Textures/backLight_diffuse.png"/>
     <File fileId="10" filename="Textures/dashboard_diffuse.png"/>
-    <File fileId="25" filename="Textures/decal_diffuse.png"/>
-    <File fileId="23" filename="Textures/ePower_diffuse.dds"/>
-    <File fileId="24" filename="Textures/ePower_normal.dds"/>
+    <File fileId="24" filename="Textures/decal_diffuse.png"/>
+    <File fileId="22" filename="Textures/ePower_diffuse.dds"/>
+    <File fileId="23" filename="Textures/ePower_normal.dds"/>
     <File fileId="3" filename="Textures/global_specular.dds"/>
-    <File fileId="21" filename="Textures/sideWindow_diffuse.dds"/>
+    <File fileId="20" filename="Textures/sideWindow_diffuse.dds"/>
   </Files>
 
 
   <Materials>
     <Material name="backLightTex" materialId="5" alphaBlending="true" customShaderId="4">
-      <Texture fileId="26"/>
+      <Texture fileId="25"/>
       <Normalmap fileId="2"/>
       <Glossmap fileId="8"/>
       <CustomParameter name="RDT" value="1 1 0 0"/>
     </Material>
-    <Material name="dashboardSymbols_mat1" materialId="6" customShaderId="15" customShaderVariation="BLINK">
+    <Material name="dashboardSymbols_mat1" materialId="6" alphaBlending="true" customShaderId="12" customShaderVariation="staticLight">
       <Texture fileId="14"/>
       <Normalmap fileId="2"/>
       <Glossmap fileId="8"/>
-      <CustomParameter name="lightControl" value="1 0 0 0"/>
     </Material>
     <Material name="dashboardTex" materialId="7" customShaderId="12">
       <Texture fileId="10"/>
@@ -53,20 +51,20 @@
       <CustomParameter name="colorMat1" value="1 0 0 2"/>
     </Material>
     <Material name="decalTex" materialId="9">
-      <Texture fileId="25"/>
+      <Texture fileId="24"/>
     </Material>
     <Material name="ePowerDecal_mat" materialId="10">
-      <Texture fileId="23"/>
-      <Normalmap fileId="24"/>
+      <Texture fileId="22"/>
+      <Normalmap fileId="23"/>
     </Material>
-    <Material name="glass_mat" materialId="12" alphaBlending="true" customShaderId="4">
-      <Texture fileId="16"/>
-      <Glossmap fileId="17"/>
+    <Material name="glass_mat" materialId="11" alphaBlending="true" customShaderId="4">
+      <Texture fileId="15"/>
+      <Glossmap fileId="16"/>
       <CustomParameter name="RDT" value="1 0.7 0 0"/>
     </Material>
-    <Material name="glass_mat" materialId="11" alphaBlending="true" customShaderId="4" shadingRate="1x2">
-      <Texture fileId="21"/>
-      <Glossmap fileId="22"/>
+    <Material name="glass_mat" materialId="12" alphaBlending="true" customShaderId="4" shadingRate="1x2">
+      <Texture fileId="20"/>
+      <Glossmap fileId="21"/>
       <CustomParameter name="RDT" value="1 0.7 0 0"/>
     </Material>
     <Material name="interior_mat" materialId="13" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="4" customShaderVariation="colorMask">
@@ -81,7 +79,7 @@
       <CustomParameter name="colorMat5" value="0 0 0 0"/>
       <CustomParameter name="colorMat6" value="0.05 0.05 0.05 5"/>
     </Material>
-    <Material name="interior_mat" materialId="14" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="4" customShaderVariation="colorMask">
+    <Material name="interior_mat2" materialId="14" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="4" customShaderVariation="colorMask">
       <Normalmap fileId="2"/>
       <Glossmap fileId="8"/>
       <CustomParameter name="RDT" value="1 1 0 0"/>
@@ -92,7 +90,7 @@
     </Material>
     <Material name="lights_off" materialId="16" diffuseColor="1 0 0 1">
     </Material>
-    <Material name="mirrorsBigDecal" materialId="17" diffuseColor="0 0 0 1" specularColor="0 1 1" customShaderId="20">
+    <Material name="mirrorsBigDecal" materialId="17" diffuseColor="0 0 0 1" specularColor="0 1 1" customShaderId="19">
       <Reflectionmap lodDistanceScaling="0.5" viewDistanceScaling="0.5" type="planar" scaling="1" refractiveIndex="10" bumpScale="0.1" shapesObjectMask="4294967295" lightsObjectMask="4294967295"/>
       <CustomParameter name="reflectionScale" value="1 0 0 0"/>
     </Material>
@@ -135,7 +133,7 @@
         <Shape shapeId="2" name="body_vis" translation="0 1.53669 -0.135485" clipDistance="300" nodeId="95" materialIds="19" castsShadows="true" receiveShadows="true"/>
         <TransformGroup name="cameras" translation="0 0 0.0147289" nodeId="96">
           <TransformGroup name="outdoorCameraTarget" translation="0 1.14423 0" rotation="-24 180 0" nodeId="97">
-            <Camera name="outdoorCamera" translation="-1.09239 0.620876 4.85483" rotation="3.04113 -25.5135 -12.2949" nodeId="98" fov="54.4322" nearClip="0.3" farClip="5000" orthographicHeight="1"/>
+            <Camera name="outdoorCamera" translation="-0.439818 0.906607 -0.065734" rotation="-1.66558 -16.23 -7.47612" nodeId="98" fov="54.4322" nearClip="0.3" farClip="5000" orthographicHeight="1"/>
           </TransformGroup>
           <Camera name="indoorCamera" translation="0.504 1.927 0.768" rotation="-8 180 0" nodeId="99" fov="60" nearClip="0.1" farClip="5000" orthographicHeight="1"/>
           <TransformGroup name="cameraRaycastNode1" translation="0 1.192 2.93612" nodeId="100"/>
@@ -195,21 +193,21 @@
         </TransformGroup>
         <TransformGroup name="movingParts" nodeId="141">
           <Shape shapeId="25" name="frontDoorLeft_vis" translation="0.988351 1.23164 1.615" clipDistance="300" nodeId="142" materialIds="19" castsShadows="true" receiveShadows="true">
-            <Shape shapeId="26" name="windowDoorLeft_vis" translation="-0.036 0.127 -0.56" clipDistance="300" nodeId="143" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="26" name="windowDoorLeft_vis" translation="-0.036 0.127 -0.56" clipDistance="300" nodeId="143" materialIds="11" castsShadows="true" receiveShadows="true"/>
             <TransformGroup name="mirrorsLeft" nodeId="144">
               <Shape shapeId="27" name="bigLeft" translation="0.138832 0.410383 -0.100044" rotation="-82.945 19.8371 0.212068" scale="0.99 1 1" clipDistance="20" nodeId="145" materialIds="17" castsShadows="true" receiveShadows="true" decalLayer="1"/>
               <Shape shapeId="28" name="smallLeft" translation="0.143033 0.229236 -0.0871957" rotation="-84.8494 17 0" clipDistance="20" nodeId="146" materialIds="17" castsShadows="true" receiveShadows="true" decalLayer="1"/>
             </TransformGroup>
           </Shape>
           <Shape shapeId="29" name="frontDoorRight_vis" translation="-1.063 1.204 1.617" clipDistance="300" nodeId="147" materialIds="19" castsShadows="true" receiveShadows="true">
-            <Shape shapeId="30" name="windowDoorRight_vis" translation="0.109367 0.148481 -0.556" clipDistance="300" nodeId="148" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="30" name="windowDoorRight_vis" translation="0.109367 0.148481 -0.556" clipDistance="300" nodeId="148" materialIds="11" castsShadows="true" receiveShadows="true"/>
             <TransformGroup name="mirrorsRight" nodeId="149">
               <Shape shapeId="31" name="bigRight" translation="-0.0631407 0.435148 -0.117216" rotation="-85.526 -31.9539 0.040716" clipDistance="20" nodeId="150" materialIds="17" castsShadows="true" receiveShadows="true" decalLayer="1"/>
               <Shape shapeId="32" name="smallRight" translation="-0.0655985 0.25589 -0.0945641" rotation="-90 -29.0445 1.24147e-06" clipDistance="20" nodeId="151" materialIds="17" castsShadows="true" receiveShadows="true" decalLayer="1"/>
             </TransformGroup>
           </Shape>
           <Shape shapeId="33" name="sideDoor_vis" translation="-0.808176 1.50953 -0.350256" clipDistance="300" nodeId="152" materialIds="19" castsShadows="true" receiveShadows="true">
-            <Shape shapeId="34" name="windowSideDoor_vis" translation="-0.133797 0.270954 0" clipDistance="300" nodeId="153" materialIds="11" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="34" name="windowSideDoor_vis" translation="-0.133797 0.270954 0" clipDistance="300" nodeId="153" materialIds="12" castsShadows="true" receiveShadows="true"/>
             <Shape shapeId="35" name="sideDoorColi" translation="-0.140304 0 0" visibility="false" compoundChild="true" collisionMask="8194" nodeId="154" materialIds="15" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
           </Shape>
           <TransformGroup name="doorBackLeftNode" translation="0.94 1.589 -3.085" nodeId="155">
@@ -240,13 +238,13 @@
           <Shape shapeId="48" name="wiperRight_vis" translation="0.0303062 1.48188 2.12483" clipDistance="300" nodeId="174" materialIds="19" castsShadows="true" receiveShadows="true"/>
         </TransformGroup>
         <TransformGroup name="visuals" nodeId="175">
-          <Shape shapeId="49" name="lightGlass_vis" translation="0 1.03606 2.61085" clipDistance="300" nodeId="176" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="49" name="lightGlass_vis" translation="0 1.03606 2.61085" clipDistance="300" nodeId="176" materialIds="11" castsShadows="true" receiveShadows="true"/>
           <Shape shapeId="50" name="interior_vis" translation="-0.00418752 1.53089 1.29211" clipDistance="300" nodeId="177" materialIds="13" castsShadows="true" receiveShadows="true"/>
-          <Shape shapeId="51" name="window_vis" translation="-3.99351e-06 1.84408 1.64718" clipDistance="300" nodeId="178" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="51" name="window_vis" translation="-3.99351e-06 1.84408 1.64718" clipDistance="300" nodeId="178" materialIds="11" castsShadows="true" receiveShadows="true"/>
           <Shape shapeId="52" name="grillDecal" translation="-9.0003e-06 0.845409 2.845" clipDistance="300" nodeId="179" materialIds="9" castsShadows="true" receiveShadows="true"/>
           <Shape shapeId="53" name="lightGlasBackRight_vis" translation="-0.937104 1.11392 -2.99357" clipDistance="300" nodeId="180" materialIds="5" castsShadows="true" receiveShadows="true"/>
           <Shape shapeId="54" name="lightGlasBackLeft_vis" translation="0.938 1.11423 -2.99403" clipDistance="300" nodeId="181" materialIds="5" castsShadows="true" receiveShadows="true"/>
-          <Shape shapeId="55" name="windowMiddel_vis" translation="0.0015015 1.95379 0.359925" clipDistance="300" nodeId="182" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="55" name="windowMiddel_vis" translation="0.0015015 1.95379 0.359925" clipDistance="300" nodeId="182" materialIds="11" castsShadows="true" receiveShadows="true"/>
           <Shape shapeId="56" name="decal_reflector" translation="0 0.492298 -3.13228" clipDistance="300" nodeId="183" materialIds="9"/>
           <Shape shapeId="57" name="decal_mbLogo" translation="-7.63685e-08 1.18852 2.76361" clipDistance="300" nodeId="184" materialIds="9"/>
         </TransformGroup>
