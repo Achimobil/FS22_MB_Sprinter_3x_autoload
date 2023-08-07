@@ -1,0 +1,6 @@
+i3dio.exporter:export_blend_to_i3d:INFO: Blender version is: 3.6.1
+i3dio.exporter:export_blend_to_i3d:INFO: I3D Exporter version is: 4.3.0-dev.5
+i3dio.exporter:export_blend_to_i3d:INFO: Exported using 'lxml'
+i3dio.exporter:export_blend_to_i3d:INFO: Exporting to D:\Achim\source\repos\FS22_MB_Sprinter_3x_autoload\sourceModels\wipers.i3d
+i3dio.exporter:_export_selected_objects:INFO: 'Selected Objects' export is selected'
+i3dio.exporter:_export_selected_objects:WARNING: No selected objects, aborting export
