@@ -56,10 +56,10 @@
 			<wheelConfiguration name="$l10n_configuration_valueDefault" price="0">
 				<wheels autoRotateBackSpeed="2.0">
 					<wheel filename="Wheels/mb.xml" configId="mb" isLeft="true" hasTireTracks="true" hasParticles="true">
-						<physics rotSpeed="1" restLoad="0.5" repr="wheelFrontLeft" driveNode="wheelFrontLeftNode" forcePointRatio="0.5" initialCompression="25" suspTravel="0.19" spring="40" damper="50" frictionScale="3"/>
+						<physics rotSpeed="1" restLoad="0.5" repr="wheelFrontLeftRepr" driveNode="wheelFrontLeft" forcePointRatio="0.5" initialCompression="25" suspTravel="0.19" spring="40" damper="50" frictionScale="3"/>
 					</wheel>
 					<wheel filename="Wheels/mb.xml" configId="mb" isLeft="false" hasTireTracks="true" hasParticles="true">
-						<physics rotSpeed="1" restLoad="0.5" repr="wheelFrontRight" driveNode="wheelFrontRightNode" forcePointRatio="0.5" initialCompression="25" suspTravel="0.19" spring="40" damper="50" frictionScale="3"/>
+						<physics rotSpeed="1" restLoad="0.5" repr="wheelFrontRightRepr" driveNode="wheelFrontRight" forcePointRatio="0.5" initialCompression="25" suspTravel="0.19" spring="40" damper="50" frictionScale="3"/>
 					</wheel>
 					<wheel filename="Wheels/mb.xml" configId="mb" isLeft="true" hasTireTracks="true" hasParticles="true">
 						<physics rotSpeed="0" restLoad="0.7" repr="wheelBackLeft" forcePointRatio="0.5" radius="0.41" width="0.30" initialCompression="25" suspTravel="0.14" spring="19" damper="50" frictionScale="3"/>
@@ -394,7 +394,7 @@
 			<part node="wiperLeft_vis_base" startTime="0.3" endTime="0.6" startRot="69.4 -36.4 -38.8" endRot="82.5 -51.8 -76.6"/>
 			
 			<part node="wiperLeft_vis" startTime="0" endTime="0.3" startRot="0 0 0" endRot="0 0 -3"/>
-			<part node="wiperLeft_vis" startTime="0" endTime="0.6" startRot="0 0 -3" endRot="0 0 -5.7"/>
+			<part node="wiperLeft_vis" startTime="0.3" endTime="0.6" startRot="0 0 -3" endRot="0 0 -5.7"/>
 			
 			<part node="wiperRight_vis_base" startTime="0" endTime="0.3" startRot="68.5 1.4 -4" endRot="59.7 -22 -34.9"/>
 			<part node="wiperRight_vis_base" startTime="0.3" endTime="0.6" startRot="59.7 -22 -34.9" endRot="82.9 -37.2 -78.8"/>
@@ -441,7 +441,21 @@
 	<cylindered>
 		<movingTools>
 			<movingTool node="sideDoor" playSound="true"/>
+			<movingTool node="wheelFrontLeftRepr">
+				<dependentPart node="lowerLinkLeft"/>
+				<dependentPart node="springLeft"/>
+			</movingTool>
+			<movingTool node="wheelFrontRightRepr">
+				<dependentPart node="lowerLinkRight"/>
+				<dependentPart node="springRight"/>
+			</movingTool>
 		</movingTools>
+		<movingParts>
+			<movingPart node="lowerLinkLeft" referencePoint="lowerLinkLeftRef" referenceFrame="lowerLinkLeftRef" isActiveDirty="true" maxUpdateDistance="30"/>
+			<movingPart node="lowerLinkRight" referencePoint="lowerLinkRightRef" referenceFrame="lowerLinkRightRef" isActiveDirty="true" maxUpdateDistance="30"/>
+			<movingPart node="springLeft" referencePoint="springLeftRef" referenceFrame="springLeftRef" isActiveDirty="true" maxUpdateDistance="30" scaleZ="true"/>
+			<movingPart node="springRight" referencePoint="springRightRef" referenceFrame="springRightRef" isActiveDirty="true" maxUpdateDistance="30" scaleZ="true"/>
+		</movingParts>
 		<sounds>
 			<hydraulic linkNode="mb_sprinter_main_component1" template="PICKUP_TRUNK" loops="1"/>
 		</sounds>
@@ -570,12 +584,6 @@
 		<i3dMapping id="mb_sprinter_main_component1" node="0>"/>
 		<i3dMapping id="body_vis" node="0>4"/>
 		<i3dMapping id="exhaustParticle" node="0>12"/>
-		<i3dMapping id="wheelFrontLeftNode" node="0>0|0"/>
-		<i3dMapping id="wheelFrontRightNode" node="0>1|0"/>
-		<i3dMapping id="wheelFrontLeft" node="0>0"/>
-		<i3dMapping id="wheelFrontRight" node="0>1"/>
-		<i3dMapping id="wheelBackLeft" node="0>2"/>
-		<i3dMapping id="wheelBackRight" node="0>3"/>
 		<i3dMapping id="exitPoint" node="0>11"/>
 		<i3dMapping id="outdoorCamera" node="0>5|0|0"/>
 		<i3dMapping id="outdoorCameraTarget" node="0>5|0"/>
@@ -690,5 +698,21 @@
 		<i3dMapping id="pickupTriggerNode2" node="0>19|1"/>
 		<i3dMapping id="triggerNode" node="0>19|2"/>
 		<i3dMapping id="loadingBase" node="0>19|3"/>
+		
+		<i3dMapping id="lowerLinkLeft" node="0>0|0|0|0"/>
+		<i3dMapping id="springLeftRef" node="0>0|0|0|0|0"/>
+		<i3dMapping id="springLeft" node="0>0|0|0|1"/>
+		<i3dMapping id="lowerLinkRight" node="0>0|0|1|0"/>
+		<i3dMapping id="springRightRef" node="0>0|0|1|0|0"/>
+		<i3dMapping id="springRight" node="0>0|0|1|1"/>
+		
+		<i3dMapping id="wheelBackLeft" node="0>0|2|0"/>
+		<i3dMapping id="wheelBackRight" node="0>0|2|1"/>		
+		<i3dMapping id="wheelFrontLeftRepr" node="0>0|2|2|0"/>
+		<i3dMapping id="wheelFrontLeft" node="0>0|2|2|0|1|0"/>
+		<i3dMapping id="lowerLinkLeftRef" node="0>0|2|2|0|0"/>
+		<i3dMapping id="wheelFrontRightRepr" node="0>0|2|3|0"/>
+		<i3dMapping id="wheelFrontRight" node="0>0|2|3|0|1|0"/>
+		<i3dMapping id="lowerLinkRightRef" node="0>0|2|3|0|0"/>
 	</i3dMappings>
 </vehicle>
