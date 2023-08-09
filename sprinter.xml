@@ -68,6 +68,10 @@
 						<physics rotSpeed="0" restLoad="0.7" repr="wheelBackRight" forcePointRatio="0.5" radius="0.41" width="0.30" initialCompression="25" suspTravel="0.14" spring="19" damper="50" frictionScale="3"/>
 					</wheel>
 				</wheels>
+                <objectChange node="wheelFrontLeftRepr" scaleActive="0.95 0.95 0.95"/>
+                <objectChange node="wheelFrontRightRepr" scaleActive="0.95 0.95 0.95"/>
+                <objectChange node="wheelBackLeft" scaleActive="0.95 0.95 0.95"/>
+                <objectChange node="wheelBackRight" scaleActive="0.95 0.95 0.95"/>
 			</wheelConfiguration>
 		</wheelConfigurations>
 		<ackermannSteeringConfigurations>
