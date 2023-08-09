@@ -182,10 +182,10 @@
         <TransformGroup name="empty" translation="-0.891 0.388 1.901" scale="0.85 0.9 0.9" nodeId="138"/>
         <TransformGroup name="empty" translation="0.891 0.388 -1.898" scale="0.85 0.9 0.9" nodeId="139"/>
         <TransformGroup name="empty" translation="-0.891 0.388 -1.898" scale="0.85 0.9 0.9" nodeId="140"/>
-        <Shape shapeId="15" name="body_vis" rotation="90 -0 0" clipDistance="300" nodeId="332" materialIds="20"/>
+        <Shape shapeId="15" name="body_vis" rotation="90 -0 0" clipDistance="300" nodeId="333" materialIds="20" castsShadows="true" receiveShadows="true"/>
         <TransformGroup name="cameras" translation="0 0 0.0147289" nodeId="142">
           <TransformGroup name="outdoorCameraTarget" translation="0 1.14423 0" rotation="-24 180 0" nodeId="143">
-            <Camera name="outdoorCamera" translation="0.283479 1.3409 -4.14396" rotation="152.67 14.9118 173.193" nodeId="144" fov="54.4322" nearClip="0.3" farClip="5000" orthographicHeight="1"/>
+            <Camera name="outdoorCamera" translation="0.759462 1.58461 -3.90289" rotation="147.395 20.9194 170.203" nodeId="144" fov="54.4322" nearClip="0.3" farClip="5000" orthographicHeight="1"/>
           </TransformGroup>
           <Camera name="indoorCamera" translation="0.504 1.927 0.768" rotation="-8 180 0" nodeId="145" fov="60" nearClip="0.1" farClip="5000" orthographicHeight="1"/>
           <TransformGroup name="cameraRaycastNode1" translation="0 1.192 2.93612" nodeId="146"/>
