@@ -607,9 +607,9 @@
 		<collisionTrigger node="aiCollisionNode" width="2.4" height="1.8"/>
 	</ai>
 	<foliageBending>
-		<bendingNode minX="-1" maxX="1" minZ="-2.75" maxZ="2.65" yOffset="0.4"/>
-		<bendingNode node="backDoorLeftColi"/>
-		<bendingNode node="backDoorRightColi"/>
+		<bendingNode minX="-1" maxX="1" minZ="-3.15" maxZ="2.65" yOffset="0.4"/>
+		<bendingNode node="backDoorLeftColi" minX="-0.4" maxX="0.5" minZ="-0.1" maxZ="0.1" yOffset="-1"/>
+		<bendingNode node="backDoorRightColi" minX="-0.4" maxX="0.5" minZ="-0.1" maxZ="0.1" yOffset="-1"/>
 	</foliageBending>
 	<dashboard>
 		<groups>
