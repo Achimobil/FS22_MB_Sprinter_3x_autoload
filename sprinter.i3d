@@ -185,7 +185,7 @@
         <Shape shapeId="15" name="body_vis" rotation="90 -0 0" clipDistance="300" nodeId="144" materialIds="21" castsShadows="true" receiveShadows="true"/>
         <TransformGroup name="cameras" translation="0 0 0.0147289" nodeId="145">
           <TransformGroup name="outdoorCameraTarget" translation="0 1.14423 0" rotation="-24 180 0" nodeId="146">
-            <Camera name="outdoorCamera" translation="-1.41029 0.816603 -0.184717" rotation="15.0577 -14.3691 -6.55301" nodeId="147" fov="54.4322" nearClip="0.3" farClip="5000" orthographicHeight="1"/>
+            <Camera name="outdoorCamera" translation="0.934117 0.957058 -0.549175" rotation="6.9983 -28.3719 -13.9231" nodeId="147" fov="54.4322" nearClip="0.3" farClip="5000" orthographicHeight="1"/>
           </TransformGroup>
           <Camera name="indoorCamera" translation="0.504 1.927 0.768" rotation="-8 180 0" nodeId="148" fov="60" nearClip="0.1" farClip="5000" orthographicHeight="1"/>
           <TransformGroup name="cameraRaycastNode1" translation="0 1.192 2.93612" nodeId="149"/>
@@ -244,17 +244,17 @@
           </TransformGroup>
         </TransformGroup>
         <TransformGroup name="movingParts" nodeId="190">
-          <Shape shapeId="38" name="frontDoorLeft_vis" clipDistance="300" nodeId="337" materialIds="21" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="38" name="frontDoorLeft_vis" clipDistance="300" nodeId="343" materialIds="21" castsShadows="true" receiveShadows="true">
             <Shape shapeId="39" name="windowDoorLeft_vis" translation="0.952351 1.35864 1.055" clipDistance="300" nodeId="192" materialIds="12" castsShadows="true" receiveShadows="true"/>
             <TransformGroup name="mirrorsLeft" translation="0.988351 1.23164 1.615" nodeId="193">
               <Shape shapeId="40" name="bigLeft" translation="0.138832 0.410383 -0.100044" rotation="-82.945 19.8371 0.212068" scale="0.99 1 1" clipDistance="20" nodeId="194" materialIds="19" castsShadows="true" receiveShadows="true" decalLayer="1"/>
-              <Shape shapeId="41" name="smallLeft" translation="0.143033 0.229236 -0.0871957" rotation="-84.8494 17 0" clipDistance="20" nodeId="195" materialIds="19" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              <Shape shapeId="41" name="smallLeft" translation="0.143033 0.229236 -0.0871958" rotation="-84.8494 17 0" clipDistance="20" nodeId="195" materialIds="19" castsShadows="true" receiveShadows="true" decalLayer="1"/>
             </TransformGroup>
           </Shape>
-          <Shape shapeId="42" name="frontDoorRight_vis" nodeId="340" materialIds="21">
+          <Shape shapeId="42" name="frontDoorRight_vis" nodeId="346" materialIds="21">
             <Shape shapeId="43" name="windowDoorRight_vis" translation="-0.953633 1.35248 1.061" clipDistance="300" nodeId="198" materialIds="12" castsShadows="true" receiveShadows="true"/>
             <TransformGroup name="mirrorsRight" translation="-1.063 1.204 1.617" nodeId="199">
-              <Shape shapeId="44" name="bigRight" translation="-0.0631407 0.435148 -0.117216" rotation="-85.526 -31.9539 0.040716" clipDistance="20" nodeId="200" materialIds="19" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              <Shape shapeId="44" name="bigRight" translation="-0.0577315 0.434613 -0.105731" rotation="-85.526 -31.9539 0.040716" clipDistance="20" nodeId="200" materialIds="19" castsShadows="true" receiveShadows="true" decalLayer="1"/>
               <Shape shapeId="45" name="smallRight" translation="-0.0655985 0.25589 -0.0945641" rotation="-90 -29.0445 1.24147e-06" clipDistance="20" nodeId="201" materialIds="19" castsShadows="true" receiveShadows="true" decalLayer="1"/>
             </TransformGroup>
           </Shape>
