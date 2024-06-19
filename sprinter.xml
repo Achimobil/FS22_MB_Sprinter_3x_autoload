@@ -426,7 +426,7 @@
 		<sounds>
 			<waterSplash linkNode="0>" template="WATER_SPLASH_01"/>
 		</sounds>
-		<steeringWheel indoorRotation="360" node="steeringWheel" outdoorRotation="37"/>
+		<steeringWheel indoorRotation="360" node="steeringWheel" outdoorRotation="60"/>
 	</drivable>
 	<animations>
 		<animation name="wiperFrontAnimation">
