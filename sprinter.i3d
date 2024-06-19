@@ -2,7 +2,7 @@
 
 <i3D name="sprinter.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
   <Asset>
-    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+    <Export program="GIANTS Editor 64bit" version="9.0.6"/>
   </Asset>
 
   <Files>
@@ -179,13 +179,23 @@
             </TransformGroup>
           </TransformGroup>
         </TransformGroup>
-        <TransformGroup name="empty" translation="-0.891 0.388 1.901" scale="0.85 0.9 0.9" nodeId="138"/>
+        <TransformGroup name="passengerSeats" nodeId="331">
+          <TransformGroup name="passengerSeat01" translation="-0.540866 1.3681 0.89361" nodeId="332">
+            <Camera name="passengerSeat01Camera" translation="0.004884 0.705127 -0.124558" rotation="-10 180 0" nodeId="333" fov="65" nearClip="0.1" farClip="5000" orthographicHeight="1"/>
+            <TransformGroup name="passengerSeat01PlayerSkin" translation="-0.014207 -0.101194 -0.011981" rotation="-19.2749 -0 0" nodeId="334"/>
+            <TransformGroup name="passengerSeat01PlayerLeftFoot" translation="0.164112 -0.401496 0.570641" rotation="-15.3831 3.00569 0" nodeId="335"/>
+            <TransformGroup name="passengerSeat01PlayerRightFoot" translation="-0.171333 -0.407039 0.628811" rotation="-21.1657 -4.84435 0" nodeId="336"/>
+            <TransformGroup name="passengerSeat01PlayerLeftHand" translation="0.163373 0.0701656 0.2781" rotation="176.187 -76.6631 -214.025" nodeId="337"/>
+            <TransformGroup name="passengerSeat01PlayerRightHand" translation="-0.398026 0.0903774 0.276021" rotation="110.104 78.1761 96.7516" nodeId="338"/>
+            <TransformGroup name="passengerSeat01ExitPoint" translation="-1.0297 -0.899673 0.201556" nodeId="339"/>
+          </TransformGroup>
+        </TransformGroup>
         <TransformGroup name="empty" translation="0.891 0.388 -1.898" scale="0.85 0.9 0.9" nodeId="139"/>
         <TransformGroup name="empty" translation="-0.891 0.388 -1.898" scale="0.85 0.9 0.9" nodeId="140"/>
         <Shape shapeId="15" name="body_vis" rotation="90 -0 0" clipDistance="300" nodeId="141" materialIds="20" castsShadows="true" receiveShadows="true"/>
         <TransformGroup name="cameras" translation="0 0 0.0147289" nodeId="142">
           <TransformGroup name="outdoorCameraTarget" translation="0 1.14423 0" rotation="-24 180 0" nodeId="143">
-            <Camera name="outdoorCamera" translation="2.35428 0.615112 0.493442" rotation="19.1306 45.9243 27.3633" nodeId="144" fov="54.4322" nearClip="0.3" farClip="5000" orthographicHeight="1"/>
+            <Camera name="outdoorCamera" translation="0.635755 1.18294 -0.658637" rotation="1.21114 -61.1551 -53.9765" nodeId="144" fov="54.4322" nearClip="0.3" farClip="5000" orthographicHeight="1"/>
           </TransformGroup>
           <Camera name="indoorCamera" translation="0.504 1.927 0.768" rotation="-8 180 0" nodeId="145" fov="65" nearClip="0.1" farClip="5000" orthographicHeight="1"/>
           <TransformGroup name="cameraRaycastNode1" translation="0 1.192 2.93612" nodeId="146"/>

@@ -228,6 +228,17 @@
 			<dashboard valueType="time" displayType="NUMBER" groups="MOTOR_ACTIVE" numbers="numbersTime" numberColor="TRELLEBORG_WHITE3" precision="2"/>
 			<dashboard valueType="operatingTime" displayType="NUMBER" groups="MOTOR_ACTIVE" numbers="numbersOperatingTime" numberColor="TRELLEBORG_WHITE3" precision="1"/>
 		</dashboards>
+		<passengerSeats>
+			<passengerSeat node="passengerSeat01" exitPoint="passengerSeat01ExitPoint" outdoorCameraIndex="1">
+				<camera node="passengerSeat01Camera" rotatable="true" limit="true" rotMinX="-1.1" rotMaxX="0.4" transMin="0" transMax="0" useMirror="true" isInside="true"/>
+				<characterNode node="passengerSeat01PlayerSkin" cameraMinDistance="0.5" spineRotation="-90 0 90">
+					<target ikChain="leftArm" targetNode="passengerSeat01PlayerLeftHand" poseId="flatFingers"/>
+					<target ikChain="rightArm" targetNode="passengerSeat01PlayerRightHand" poseId="flatFingers"/>
+					<target ikChain="leftFoot" targetNode="passengerSeat01PlayerLeftFoot"/>
+					<target ikChain="rightFoot" targetNode="passengerSeat01PlayerRightFoot"/>
+				</characterNode>
+			</passengerSeat>
+		</passengerSeats>
 	</enterable>
 	<suspensions>
 		<suspension node="seat" weight="150" minTranslation="-0.05 -0.15 0.0" maxTranslation="0.05 0.15 0.0" suspensionParametersX="20 4" suspensionParametersY="5 1" suspensionParametersZ="20 4"/>
@@ -754,5 +765,14 @@
 		<i3dMapping id="wheelFrontRightRepr" node="0>0|2|3|0"/>
 		<i3dMapping id="wheelFrontRight" node="0>0|2|3|0|1|0"/>
 		<i3dMapping id="lowerLinkRightRef" node="0>0|2|3|0|0"/>
+		
+		<i3dMapping id="passengerSeat01" node="0>1|0"/>
+		<i3dMapping id="passengerSeat01Camera" node="0>1|0|0"/>
+		<i3dMapping id="passengerSeat01PlayerSkin" node="0>1|0|1"/>
+		<i3dMapping id="passengerSeat01PlayerLeftFoot" node="0>1|0|2"/>
+		<i3dMapping id="passengerSeat01PlayerRightFoot" node="0>1|0|3"/>
+		<i3dMapping id="passengerSeat01PlayerLeftHand" node="0>1|0|4"/>
+		<i3dMapping id="passengerSeat01PlayerRightHand" node="0>1|0|5"/>
+		<i3dMapping id="passengerSeat01ExitPoint" node="0>1|0|6"/>
 	</i3dMappings>
 </vehicle>
