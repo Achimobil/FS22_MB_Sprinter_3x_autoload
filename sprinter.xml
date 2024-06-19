@@ -187,15 +187,18 @@
 			<turnLight linkNode="0>" template="SWITCH_TURNLIGHT"/>
 		</sounds>
 		<dashboards>
-			<dashboard valueType="lightState" displayType="EMITTER" groups="MOTOR_ACTIVE" node="speedDecal" intensity="0.5" lightTypes="1 2">
+			<dashboard valueType="lightState" displayType="EMITTER" groups="MOTOR_ACTIVE" node="speedDecal" intensity="0.5" lightTypes="0">
 				<default>
 					<dashboard displayType="VISIBILITY" groups="MOTOR_ACTIVE" node="naviDecal"/>
 				</default>
 			</dashboard>
-			<dashboard valueType="lightState" displayType="EMITTER" groups="MOTOR_ACTIVE" node="rpmDecal" intensity="0.5" lightTypes="1 2"/>
-			<dashboard valueType="lightState" displayType="EMITTER" groups="MOTOR_ACTIVE" node="naviDecal" intensity="0.5" lightTypes="1 2"/>
-			<dashboard valueType="lightState" displayType="EMITTER" groups="MOTOR_ACTIVE" node="fuelDecal" intensity="0.5" lightTypes="1 2"/>
-			<dashboard valueType="lightState" displayType="EMITTER" groups="MOTOR_ACTIVE" node="mDisplayDecal" intensity="0.5" lightTypes="1 2"/>
+			<dashboard valueType="lightState" displayType="EMITTER" groups="MOTOR_ACTIVE" node="rpmDecal" intensity="0.5" lightTypes="0"/>
+			<dashboard valueType="lightState" displayType="EMITTER" groups="MOTOR_ACTIVE" node="naviDecal" intensity="0.5" lightTypes="0"/>
+			<dashboard valueType="lightState" displayType="EMITTER" groups="MOTOR_ACTIVE" node="fuelDecal" intensity="0.5" lightTypes="0"/>
+			<dashboard valueType="lightState" displayType="EMITTER" groups="MOTOR_ACTIVE" node="mDisplayDecal" intensity="0.5" lightTypes="0"/>
+			<dashboard valueType="lightState" displayType="EMITTER" groups="MOTOR_ACTIVE" node="speedNeedleItem" intensity="0.5" lightTypes="0"/>
+			<dashboard valueType="lightState" displayType="EMITTER" groups="MOTOR_ACTIVE" node="rpmNeedleItem" intensity="0.5" lightTypes="0"/>
+			<dashboard valueType="lightState" displayType="EMITTER" groups="MOTOR_ACTIVE" node="fuelNeedleItem" intensity="0.5" lightTypes="0"/>
 			<dashboard valueType="turnLightHazard" displayType="EMITTER" groups="MOTOR_ACTIVE" node="warningLightHazardDecal" baseColor="BLACK" emitColor="RED" intensity="4"/>
 			<dashboard valueType="turnLightLeft" displayType="EMITTER" groups="MOTOR_ACTIVE" node="turnlightLeftDecal" baseColor="BLACK" emitColor="GREEN" intensity="1"/>
 			<dashboard valueType="turnLightRight" displayType="EMITTER" groups="MOTOR_ACTIVE" node="turnlightRightDecal" baseColor="BLACK" emitColor="GREEN" intensity="1"/>
@@ -734,8 +737,11 @@
 		<i3dMapping id="rulBar5" node="0>15|1|0|4"/>
 		<i3dMapping id="rulBar6" node="0>15|1|0|4"/>
 		<i3dMapping id="speedNeedle" node="0>8|1|0"/>
+		<i3dMapping id="speedNeedleItem" node="0>8|1|0|0"/>
 		<i3dMapping id="rpmNeedle" node="0>8|1|1"/>
+		<i3dMapping id="rpmNeedleItem" node="0>8|1|1|0"/>
 		<i3dMapping id="fuelNeedle" node="0>8|1|2"/>
+		<i3dMapping id="fuelNeedleItem" node="0>8|1|2|0"/>
 		<i3dMapping id="naviDecal" node="0>8|2|2"/>
 		<i3dMapping id="dbl_mapPlane" node="0>8|2|2|0"/>
 		<i3dMapping id="dbl_position" node="0>8|2|2|0|0"/>
