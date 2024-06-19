@@ -630,6 +630,10 @@
 		<default>
 			<dashboard displayType="VISIBILITY" node="naviDecal" groups="MOTOR_ACTIVE"/>
 		</default>
+		<dashboardLive>
+			<dashboard valueType="miniMap" cmd="map" displayType="VISIBILITY" node="dbl_mapPlane" groups="MOTOR_ACTIVE"/>
+			<dashboard valueType="miniMap" cmd="posMarker" displayType="VISIBILITY" node="dbl_position" groups="MOTOR_ACTIVE"/>
+		</dashboardLive>
 	</dashboard>
 	<i3dMappings>
 		<i3dMapping id="mb_sprinter_main_component1" node="0>"/>
@@ -733,6 +737,8 @@
 		<i3dMapping id="rpmNeedle" node="0>8|1|1"/>
 		<i3dMapping id="fuelNeedle" node="0>8|1|2"/>
 		<i3dMapping id="naviDecal" node="0>8|2|2"/>
+		<i3dMapping id="dbl_mapPlane" node="0>8|2|2|0"/>
+		<i3dMapping id="dbl_position" node="0>8|2|2|0|0"/>
 		<i3dMapping id="speedDecal" node="0>8|2|0"/>
 		<i3dMapping id="rpmDecal" node="0>8|2|1"/>
 		<i3dMapping id="fuelDecal" node="0>8|2|3"/>
