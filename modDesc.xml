@@ -2,7 +2,7 @@
 <modDesc descVersion="80">
 	<author>Achimobil</author>
 	<contributor>Farming-Freunde</contributor>
-	<version>1.3.0.4</version>
+	<version>1.3.0.5</version>
 	<title>
 		<en>MB Sprinter 3x AL</en>
 	</title>
@@ -22,6 +22,7 @@ Farbwahl für Kabine und Felgen.
 Danke an Chefkoch der den Sprinter vom FSM-Team in den LS22 gebracht hat und mir erlaubt hat diesen mit Autoload zu veröffentlichen.
 
 Changelog
+1.3.0.5 - Navi mit DBL Support hinzugefügt
 1.3.0.4 - Beifahrer (Kubota) Support hinzugefügt
 1.3.0.3 - FOV er Innenkamera leicht erhöht
 1.3.0.2 - Lenkrad für Außenkamera korrigiert
