@@ -248,7 +248,7 @@
 			</fillUnitConfiguration>
 		</fillUnitConfigurations>
 	</fillUnit>
-	<motorized statsType="car">
+	<motorized statsType="truck">
 		<consumerConfigurations>
 			<consumerConfiguration>
 				<consumer fillUnitIndex="1" usage="55" fillType="diesel"/>
@@ -260,7 +260,7 @@
 		</consumerConfigurations>
 		<motorConfigurations>
 			<motorConfiguration name="311 CDI" hp="109" price="0" consumerConfigurationIndex="1" isSelectable="true">
-				<motor torqueScale="0.186" minRpm="1000" maxRpm="6000" maxForwardSpeed="100" maxBackwardSpeed="22" brakeForce="7" lowBrakeForceScale="0.22" dampingRateScale="0.4">
+				<motor torqueScale="0.186" minRpm="1000" maxRpm="6000" maxForwardSpeed="100" maxBackwardSpeed="22" brakeForce="2.2" lowBrakeForceScale="0.22" dampingRateScale="0.4">
 					<torque rpm="1000" torque="0.9"/>
 					<torque rpm="2400" torque="1"/>
 					<torque rpm="3480" torque="1"/>
@@ -286,7 +286,7 @@
 				<objectChange node="ePower" visibilityActive="false"/>
 			</motorConfiguration>
 			<motorConfiguration name="313 CDI" hp="129" price="0" consumerConfigurationIndex="1" isSelectable="true">
-				<motor torqueScale="0.22" minRpm="1000" maxRpm="6000" maxForwardSpeed="100" maxBackwardSpeed="22" brakeForce="7" lowBrakeForceScale="0.22" dampingRateScale="0.4">
+				<motor torqueScale="0.22" minRpm="1000" maxRpm="6000" maxForwardSpeed="100" maxBackwardSpeed="22" brakeForce="2.2" lowBrakeForceScale="0.22" dampingRateScale="0.4">
 					<torque rpm="1000" torque="0.9"/>
 					<torque rpm="2400" torque="1"/>
 					<torque rpm="3480" torque="1"/>
@@ -312,7 +312,7 @@
 				<objectChange node="ePower" visibilityActive="false"/>
 			</motorConfiguration>
 			<motorConfiguration name="316 CDI" hp="163" price="0" consumerConfigurationIndex="1" isSelectable="true">
-				<motor torqueScale="0.278" minRpm="1000" maxRpm="6000" maxForwardSpeed="100" maxBackwardSpeed="22" brakeForce="7" lowBrakeForceScale="0.22" dampingRateScale="0.4">
+				<motor torqueScale="0.278" minRpm="1000" maxRpm="6000" maxForwardSpeed="100" maxBackwardSpeed="22" brakeForce="2.2" lowBrakeForceScale="0.22" dampingRateScale="0.4">
 					<torque rpm="1000" torque="0.9"/>
 					<torque rpm="2400" torque="1"/>
 					<torque rpm="3480" torque="1"/>
@@ -338,7 +338,7 @@
 				<objectChange node="ePower" visibilityActive="false"/>
 			</motorConfiguration>
 			<motorConfiguration name="318 CDI" hp="184" price="0" consumerConfigurationIndex="1" isSelectable="true">
-				<motor torqueScale="0.314" minRpm="1000" maxRpm="6000" maxForwardSpeed="100" maxBackwardSpeed="22" brakeForce="7" lowBrakeForceScale="0.22" dampingRateScale="0.4">
+				<motor torqueScale="0.314" minRpm="1000" maxRpm="6000" maxForwardSpeed="100" maxBackwardSpeed="22" brakeForce="2.2" lowBrakeForceScale="0.22" dampingRateScale="0.4">
 					<torque rpm="1000" torque="0.9"/>
 					<torque rpm="2400" torque="1"/>
 					<torque rpm="3480" torque="1"/>
@@ -364,7 +364,7 @@
 				<objectChange node="ePower" visibilityActive="false"/>
 			</motorConfiguration>
 			<motorConfiguration name="eSprinter" hp="116" price="0" consumerConfigurationIndex="2" isSelectable="false">
-				<motor torqueScale="0.198" minRpm="1000" maxRpm="6000" maxForwardSpeed="100" maxBackwardSpeed="22" brakeForce="7" accelerationLimit="5" lowBrakeForceScale="0.22" dampingRateScale="0.4">
+				<motor torqueScale="0.198" minRpm="1000" maxRpm="6000" maxForwardSpeed="100" maxBackwardSpeed="22" brakeForce="2.2" accelerationLimit="5" lowBrakeForceScale="0.22" dampingRateScale="0.4">
 					<torque rpm="1000" torque="0.9"/>
 					<torque rpm="2400" torque="1"/>
 					<torque rpm="3480" torque="1"/>
@@ -382,7 +382,7 @@
 				<objectChange node="exhaustParticle" visibilityActive="false"/>
 			</motorConfiguration>
 			<motorConfiguration name="eSprinter+" hp="202" price="0" consumerConfigurationIndex="2" isSelectable="false">
-				<motor torqueScale="0.345" minRpm="1000" maxRpm="6000" maxForwardSpeed="100" maxBackwardSpeed="22" brakeForce="7" accelerationLimit="5" lowBrakeForceScale="0.22" dampingRateScale="0.4">
+				<motor torqueScale="0.345" minRpm="1000" maxRpm="6000" maxForwardSpeed="100" maxBackwardSpeed="22" brakeForce="2.2" accelerationLimit="5" lowBrakeForceScale="0.22" dampingRateScale="0.4">
 					<torque rpm="1000" torque="0.9"/>
 					<torque rpm="2400" torque="1"/>
 					<torque rpm="3480" torque="1"/>
