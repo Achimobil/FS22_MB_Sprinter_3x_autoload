@@ -2,7 +2,7 @@
 <modDesc descVersion="80">
 	<author>Achimobil</author>
 	<contributor>Farming-Freunde</contributor>
-	<version>1.3.0.7</version>
+	<version>1.4.0.0</version>
 	<title>
 		<en>MB Sprinter 3x AL</en>
 	</title>
@@ -21,15 +21,14 @@ Farbwahl für Kabine und Felgen.
 
 Danke an Chefkoch der den Sprinter vom FSM-Team in den LS22 gebracht hat und mir erlaubt hat diesen mit Autoload zu veröffentlichen.
 
-Changelog
-1.3.0.7 - Überflüssige Dateien gelöscht
-1.3.0.6 - Hintergrundbeleuchtung Tacho hinzugefügt
-1.3.0.5 - Navi mit DBL Support hinzugefügt
-1.3.0.4 - Beifahrer (Kubota) Support hinzugefügt
-1.3.0.3 - FOV er Innenkamera leicht erhöht
-1.3.0.2 - Lenkrad für Außenkamera korrigiert
-1.3.0.1 - Motorbremse justiert
-ohne - Fehlender Schatten der Beifahrertür hinzugefügt
+Changelog 1.4.0.0
+ - Hintergrundbeleuchtung Tacho hinzugefügt
+ - Navi mit DBL Support hinzugefügt
+ - Beifahrer (Kubota) Support hinzugefügt
+ - FOV er Innenkamera leicht erhöht
+ - Lenkrad für Außenkamera korrigiert
+ - Motorbremse justiert
+ - Fehlender Schatten der Beifahrertür hinzugefügt
 
 Changelog 1.3.0.0
 - Neue Icons erstellt
@@ -61,6 +60,15 @@ Color choice for cabin and rims
 
 Thanks to Chefkoch who brought the Sprinter from the FSM team to LS22 and allowed me to publish it with autoload.
 
+Changelog 1.4.0.0
+ - Added speedometer backlight
+ - Navi with DBL support added
+ - Added passenger (Kubota) support
+ - FOV of interior camera slightly increased
+ - Steering wheel for outside camera corrected
+ - Engine brake adjusted
+ - Missing shadow of the passenger door added
+ 
 Changelog 1.3.0.0
 - New icons created
 - Unnecessary files removed
