@@ -35,6 +35,7 @@
 				<pickupTriggers>
 					<pickupTrigger node="pickupTriggerNode"/>
 					<pickupTrigger node="pickupTriggerNode2"/>
+					<pickupTrigger node="pickupTriggerBack"/>
 				</pickupTriggers>
 				<loadArea baseNode="loadingBase" leftRightCornerOffset="0.65 -0.06 -0.05" lenght="3.36" width="1.33" height="2.10"/>
 				<autoLoadObjectSettings>
@@ -766,6 +767,7 @@
 		<i3dMapping id="pickupTriggerNode2" node="0>18|1"/>
 		<i3dMapping id="triggerNode" node="0>18|2"/>
 		<i3dMapping id="loadingBase" node="0>18|3"/>
+		<i3dMapping id="pickupTriggerBack" node="0>18|4"/>
 		
 		<i3dMapping id="lowerLinkLeft" node="0>0|0|0|0"/>
 		<i3dMapping id="springLeftRef" node="0>0|0|0|0|0"/>
