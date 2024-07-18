@@ -185,7 +185,7 @@
         </TransformGroup>
         <TransformGroup name="passengerSeats" nodeId="140">
           <TransformGroup name="passengerSeat01" translation="-0.540866 1.3681 0.89361" nodeId="141">
-            <Camera name="passengerSeat01Camera" translation="4.27986 2.7193 -6.4659" rotation="158.312 34.1482 -180" nodeId="142" fov="65" nearClip="0.1" farClip="5000" orthographicHeight="1"/>
+            <Camera name="passengerSeat01Camera" translation="2.05053 0.332324 -7.06908" rotation="160.375 24.2981 -180" nodeId="142" fov="65" nearClip="0.1" farClip="5000" orthographicHeight="1"/>
             <TransformGroup name="passengerSeat01PlayerSkin" translation="-0.014207 -0.101194 -0.011981" rotation="-19.2749 -0 0" nodeId="143"/>
             <TransformGroup name="passengerSeat01PlayerLeftFoot" translation="0.164112 -0.401496 0.570641" rotation="-15.3831 3.00569 0" nodeId="144"/>
             <TransformGroup name="passengerSeat01PlayerRightFoot" translation="-0.171333 -0.407039 0.628811" rotation="-21.1657 -4.84435 0" nodeId="145"/>
@@ -435,6 +435,7 @@
           <Shape shapeId="76" name="trailerAttacher_vis" translation="0 0.385741 -3.15028" scale="0.8 0.8 0.8" clipDistance="300" nodeId="328" materialIds="21" castsShadows="true" receiveShadows="true">
             <TransformGroup name="trailerAttacherJoint" translation="4.62311e-10 0.05231 -0.145" rotation="0 90 0" nodeId="329"/>
             <TransformGroup name="electroOutNode" translation="0.0679543 -0.0332445 -0.0325601" nodeId="330"/>
+            <TransformGroup name="electroInNode" translation="0.0464028 0.05645 0.297383" rotation="-82.4932 -0 0" nodeId="341"/>
           </Shape>
         </TransformGroup>
         <TransformGroup name="colisions" nodeId="331">
@@ -443,11 +444,11 @@
           <Shape shapeId="79" name="sideColi" translation="-0.983537 1.52088 -2.11143" visibility="false" compoundChild="true" collisionMask="8194" nodeId="334" materialIds="16" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
           <Shape shapeId="80" name="roofColi" translation="1.19209e-07 2.70143 -1.26174" visibility="false" compoundChild="true" collisionMask="8194" nodeId="335" materialIds="16" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
         </TransformGroup>
-        <TransformGroup name="autoloader" nodeId="337">
-          <Shape shapeId="81" name="pickupTriggerLeft" translation="3 1.5 -0.8" kinematic="true" trigger="true" nodeId="338" materialIds="22" nonRenderable="true"/>
-          <Shape shapeId="81" name="pickupTriggerRight" translation="-3 1.5 -0.8" kinematic="true" trigger="true" nodeId="339" materialIds="22" nonRenderable="true"/>
-          <Shape shapeId="82" name="loadTrigger" translation="0 1.6 -1.25" kinematic="true" trigger="true" nodeId="340" materialIds="22" nonRenderable="true"/>
-          <TransformGroup name="loadingBase" translation="0 0.7 0.38" nodeId="341"/>
+        <TransformGroup name="autoloader" nodeId="336">
+          <Shape shapeId="81" name="pickupTriggerLeft" translation="3 1.5 -0.8" kinematic="true" trigger="true" nodeId="337" materialIds="22" nonRenderable="true"/>
+          <Shape shapeId="81" name="pickupTriggerRight" translation="-3 1.5 -0.8" kinematic="true" trigger="true" nodeId="338" materialIds="22" nonRenderable="true"/>
+          <Shape shapeId="82" name="loadTrigger" translation="0 1.6 -1.25" kinematic="true" trigger="true" nodeId="339" materialIds="22" nonRenderable="true"/>
+          <TransformGroup name="loadingBase" translation="0 0.7 0.38" nodeId="340"/>
         </TransformGroup>
       </Shape>
   </Scene>

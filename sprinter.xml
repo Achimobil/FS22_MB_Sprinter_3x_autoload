@@ -122,6 +122,10 @@
 	</attacherJoints>
 	<connectionHoses>
 		<target attacherJointIndices="1" node="electroOutNode" socket="electric_metal" type="electric"/>
+        <localHose>
+            <hose type="electric"  node="electroOutNode" length="0.05" diameter="0.012" straighteningFactor="2" isWorldSpaceHose="false" isTwoPointHose="true" adapterType="METAL"/>
+            <target type="electric" node="electroInNode" straighteningFactor="2"/>
+        </localHose>
 	</connectionHoses>
 	<licensePlates defaultPlacement="BOTH">
 		<licensePlate node="licensePlateFront" position="FRONT" preferedType="ELONGATED" placementArea="0.10 0.22 0.10 0.22"/>
@@ -705,6 +709,7 @@
 		<i3dMapping id="reverseLights" node="0>13|1|12"/>
 		<i3dMapping id="trailerAttacherJoint" node="0>16|0|0"/>
 		<i3dMapping id="electroOutNode" node="0>16|0|1"/>
+		<i3dMapping id="electroInNode" node="0>16|0|2"/>
 		<i3dMapping id="mirrorBigLeft" node="0>9|0|1|0"/>
 		<i3dMapping id="mirrorBigRight" node="0>9|1|1|0"/>
 		<i3dMapping id="mirrorSmallLeft" node="0>9|0|1|1"/>
