@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<!-- Created by [FSM]Team -->
 <wheel>
     <default>
-        <physics radius="0.38" width="0.28" mass="0.046" tireType="street" frictionScale="1.60" maxLongStiffness="8" maxLatStiffness="100" maxLatStiffnessLoad="2" />
+        <physics radius="0.42" width="0.28" mass="0.046" tireType="street" frictionScale="1.60" maxLongStiffness="8" maxLatStiffness="100" maxLatStiffnessLoad="2" />
 		<tire filename="$data/shared/wheels/tires/lizard/implement/R18.i3d" nodeLeft="0|0" nodeRight="0|1" maxDeformation="0.041" isCareWheel="false" tireTrackAtlasIndex="4" />
         <outerRim filename="Wheels/mb_rim.i3d" nodeLeft="0|0" nodeRight="0|3" scale="0.95 0.95 0.95"/>
         <innerRim filename="$data/shared/wheels/rims/rim001.i3d" nodeLeft="2|0" nodeRight="2|1" widthAndDiam="11.6 22"/>

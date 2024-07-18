@@ -29,6 +29,8 @@ Changelog 1.4.0.0
  - Lenkrad für Außenkamera korrigiert
  - Motorbremse justiert
  - Fehlender Schatten der Beifahrertür hinzugefügt
+ - Konstruktionslicht entfernt
+ - Reifenradius korrigiert
 
 Changelog 1.3.0.0
 - Neue Icons erstellt
@@ -68,6 +70,8 @@ Changelog 1.4.0.0
  - Steering wheel for outside camera corrected
  - Engine brake adjusted
  - Missing shadow of the passenger door added
+ - Construction light removed
+ - Wheel radius corrected
  
 Changelog 1.3.0.0
 - New icons created

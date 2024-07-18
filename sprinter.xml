@@ -76,19 +76,19 @@
 			<wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="CONTINENTAL" saveId="CONTINENTAL_DEFAULT">
 				<wheels autoRotateBackSpeed="2.3">
 					<wheel filename="$data/shared/wheels/tires/continental/terrainContactHT/265_65R17.xml" isLeft="true" hasTireTracks="true" hasParticles="true" configId="rimsCar02">
-						<physics rotSpeed="1" restLoad="0.6" repr="wheelFrontLeftRepr" driveNode="wheelFrontLeft" forcePointRatio="0.5" initialCompression="25" suspTravel="0.13" spring="17.5" damper="3" frictionScale="2.5" yOffset="-0.013"/>
+						<physics rotSpeed="1" restLoad="0.6" radius="0.4" repr="wheelFrontLeftRepr" driveNode="wheelFrontLeft" forcePointRatio="0.5" initialCompression="25" suspTravel="0.13" spring="17.5" damper="3" frictionScale="2.5" yOffset="-0.013"/>
 						<tire isCareWheel="false"/>
 					</wheel>
 					<wheel filename="$data/shared/wheels/tires/continental/terrainContactHT/265_65R17.xml" isLeft="false" hasTireTracks="true" hasParticles="true" configId="rimsCar02">
-						<physics rotSpeed="1" restLoad="0.6" repr="wheelFrontRightRepr" driveNode="wheelFrontRight" forcePointRatio="0.5" initialCompression="25" suspTravel="0.13" spring="17.5" damper="3" frictionScale="2.5" yOffset="-0.013"/>
+						<physics rotSpeed="1" restLoad="0.6" radius="0.4" repr="wheelFrontRightRepr" driveNode="wheelFrontRight" forcePointRatio="0.5" initialCompression="25" suspTravel="0.13" spring="17.5" damper="3" frictionScale="2.5" yOffset="-0.013"/>
 						<tire isCareWheel="false"/>
 					</wheel>
 					<wheel filename="$data/shared/wheels/tires/continental/terrainContactHT/265_65R17.xml" isLeft="true" hasTireTracks="true" hasParticles="true" configId="rimsCar02">
-						<physics rotSpeed="0" restLoad="0.6" repr="wheelBackLeft" forcePointRatio="0.5" initialCompression="25" suspTravel="0.14" spring="16.5" damper="3" frictionScale="3" yOffset="-0.013"/>
+						<physics rotSpeed="0" restLoad="0.6" radius="0.4" repr="wheelBackLeft" forcePointRatio="0.5" initialCompression="25" suspTravel="0.14" spring="16.5" damper="3" frictionScale="3" yOffset="-0.013"/>
 						<tire isCareWheel="false"/>
 					</wheel>
 					<wheel filename="$data/shared/wheels/tires/continental/terrainContactHT/265_65R17.xml" isLeft="false" hasTireTracks="true" hasParticles="true" configId="rimsCar02">
-						<physics rotSpeed="0" restLoad="0.6" repr="wheelBackRight" forcePointRatio="0.5" initialCompression="25" suspTravel="0.14" spring="16.5" damper="3" frictionScale="3" yOffset="-0.013"/>
+						<physics rotSpeed="0" restLoad="0.6" radius="0.4" repr="wheelBackRight" forcePointRatio="0.5" initialCompression="25" suspTravel="0.14" spring="16.5" damper="3" frictionScale="3" yOffset="-0.013"/>
 						<tire isCareWheel="false"/>
 					</wheel>
 				</wheels>
@@ -121,7 +121,7 @@
 		</attacherJoint>
 	</attacherJoints>
 	<connectionHoses>
-		<target attacherJointIndices="1" node="electric" socket="electric_metal" type="electric"/>
+		<target attacherJointIndices="1" node="electroOutNode" socket="electric_metal" type="electric"/>
 	</connectionHoses>
 	<licensePlates defaultPlacement="BOTH">
 		<licensePlate node="licensePlateFront" position="FRONT" preferedType="ELONGATED" placementArea="0.10 0.22 0.10 0.22"/>
@@ -704,7 +704,7 @@
 		<i3dMapping id="turnLightRightBack" node="0>13|1|10"/>
 		<i3dMapping id="reverseLights" node="0>13|1|12"/>
 		<i3dMapping id="trailerAttacherJoint" node="0>16|0|0"/>
-		<i3dMapping id="electric" node="0>16|0|1"/>
+		<i3dMapping id="electroOutNode" node="0>16|0|1"/>
 		<i3dMapping id="mirrorBigLeft" node="0>9|0|1|0"/>
 		<i3dMapping id="mirrorBigRight" node="0>9|1|1|0"/>
 		<i3dMapping id="mirrorSmallLeft" node="0>9|0|1|1"/>
