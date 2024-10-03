@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="window_front_new.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="2" filename="$data/shared/default_normal.dds"/>
+    <File fileId="1" filename="$data/shared/window_diffuse.dds"/>
+    <File fileId="3" filename="$data/shared/window_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="glas_mat_neu" materialId="352" alphaBlending="true" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="window_front_new.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="window_front_new" translation="0 1.86254 1.71198" rotation="-48.4279 0 0" clipDistance="400" nodeId="355" materialIds="352" castsShadows="true" receiveShadows="true"/>
+  </Scene>
+
+</i3D>
