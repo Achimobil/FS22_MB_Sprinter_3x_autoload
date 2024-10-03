@@ -30,7 +30,7 @@
 	</base>
 	<aPalletAutoLoader>
 		<aPalletAutoLoaderConfigurations>
-			<aPalletAutoLoaderConfiguration maxObjects="400" useBales="false" useTensionBelts="true" supportedObject="data/objects/pallets" UnloadRightOffset="3 -0.5 0" UnloadLeftOffset="-3 -0.5 0">
+			<aPalletAutoLoaderConfiguration maxObjects="400" useBales="false" useTensionBelts="true" supportedObject="data/objects/pallets" UnloadRightOffset="-3 -0.5 0" UnloadLeftOffset="3 -0.5 0">
 				<trigger node="triggerNode"/>
 				<pickupTriggers>
 					<pickupTrigger node="pickupTriggerNode"/>
